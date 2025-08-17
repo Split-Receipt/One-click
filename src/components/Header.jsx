@@ -1,4 +1,6 @@
+import { useTranslation } from 'react-i18next';
 function Header({ className = "" }) {
+  const { t } = useTranslation();
   return (
     <>
       <div
@@ -9,26 +11,26 @@ function Header({ className = "" }) {
         </div>
         <div className="flex gap-4">
           <a href="#page" className="text-[#9F9BA5]">
-            QR-страница
+            {t('QR-страница')}
           </a>
           <a href="#menu" className="text-[#9F9BA5]">
-            QR-меню и каталоги
+            {t('QR-меню и каталоги')}
           </a>
           <a href="#nfc" className="text-[#9F9BA5]">
-            NFC-визитки
+            {t('NFC-визитки')}
           </a>
           <a href="#features" className="text-[#9F9BA5]">
-            Преимущества
+            {t('Преимущества')}
           </a>
           <a href="#tariffs" className="text-[#9F9BA5]">
-            Тарифы
+            {t('Тарифы')}
           </a>
           <a href="#contacts" className="text-[#9F9BA5]">
-            Контакты
+            {t('Контакты')}
           </a>
         </div>
         <div className="flex gap-4">
-          <a href="#">Войти</a>
+          <a href="#">{t('Войти')}</a>
           <a href="#">RU</a>
         </div>
       </div>

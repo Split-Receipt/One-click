@@ -17,11 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: inherit;
 }
@@ -44,12 +39,18 @@ h4,
 h5,
 h6 {
   color: #fff;
+  font-weight: 500;
 }
 
 h1 {
   font-size: 4rem;
-  font-weight: 500;
   line-height: 0.8;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
 }
 
 button {
@@ -71,4 +72,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* custom classes */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }

@@ -1,4 +1,6 @@
+import { useTranslation } from "react-i18next";
 function Screen({ className = "" }) {
+  const { t } = useTranslation();
   return (
     <>
       <div
@@ -15,13 +17,14 @@ function Screen({ className = "" }) {
               }}
             />
             <h1 className="text-center">
-              One click — твой <br /> персональный инструмент <br /> контактов и
-              продаж
+              {t("One click — твой")} <br /> {t("персональный инструмент")}{" "}
+              <br /> {t("контактов и продаж")}
             </h1>
             <p className="text-center text-2xl">
-              Подключись сейчас и получи вечный <br /> бесплатный доступ!
+              {t("Подключись сейчас и получи вечный")} <br />{" "}
+              {t("бесплатный доступ!")}
             </p>
-            <button className="bg-[#9560EB]">Подключиться</button>
+            <button className="bg-[#9560EB]">{t("Подключиться")}</button>
             <img
               src="public/img/message.svg"
               className="absolute top-1/2 right-[-21%] -translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110"
@@ -33,7 +36,7 @@ function Screen({ className = "" }) {
           </div>
         </div>
       </div>
-      <style jsx>{`
+      <style>{`
         @keyframes float-up-right {
           0%,
           100% {
