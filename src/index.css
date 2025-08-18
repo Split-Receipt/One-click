@@ -56,6 +56,12 @@ h2 {
 }
 
 h3 {
+  font-size: 2.25rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+h4 {
   font-size: 1.15rem;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -77,10 +83,6 @@ button:hover {
   scale: 1.05;
   color: #9560eb;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 /* custom classes */
 
@@ -92,22 +94,32 @@ button:focus-visible {
 .card {
   background-color: #0d0d0d;
   border-radius: 10px;
-  border: 1px solid #332b40;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
   min-width: 250px;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: #c7c7c7;
 
   button {
     margin-top: auto;
     justify-self: flex-end;
   }
+
+  &.active {
+    background-color: #9560eb;
+    color: #fff;
+  }
+
+  &:hover {
+    scale: 1;
+  }
 }
 
 .ellipse {
-  background-image: url('public/img/ellipse.svg');
+  background-image: url("public/img/ellipse.svg");
   background-size: cover;
   background-position: center center;
   position: relative;

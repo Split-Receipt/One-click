@@ -38,7 +38,7 @@ function Footer({ className = "" }) {
               <a href="#">{t("Вопросы-ответы")}</a>
             </div>
             <div className="flex flex-col gap-2">
-              <h3>{t("Информация")}</h3>
+              <h4>{t("Информация")}</h4>
               <p>{t("Creator RA Studio SAC")}</p>
               <p>{t("RUC 20606559578")}</p>
               <p>{t("Jr. Policarpo Caballero, Cusco")}</p>
@@ -46,7 +46,7 @@ function Footer({ className = "" }) {
               <p>{t("soporteoneqliq@gmail.com")}</p>
             </div>
             <div className="flex flex-col gap-2">
-              <h3>{t("Карта сайта")}</h3>
+              <h4>{t("Карта сайта")}</h4>
               <a href="#page">{t("QR-страница")}</a>
               <a href="#menu">{t("QR-меню и каталоги")}</a>
               <a href="#nfc">{t("NFC-визитки")}</a>
@@ -55,7 +55,7 @@ function Footer({ className = "" }) {
               <a href="#contacts">{t("Контакты")}</a>
             </div>
             <div className="flex flex-col gap-3">
-              <h3>{t("Методы оплаты")}</h3>
+              <h4>{t("Методы оплаты")}</h4>
               <div className="grid gap-2 grid-cols-2 justify-items-center items-center">
                 <img
                   src="public/img/paypal.png"

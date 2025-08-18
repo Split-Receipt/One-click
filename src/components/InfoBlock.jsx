@@ -1,0 +1,76 @@
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
+
+function InfoBlock({ className = "", id, title, info }) {
+  const { t } = useTranslation();
+
+  const tabs = [
+    {
+      id: "possibilities",
+      label: "Возможности",
+      icon: "public/img/possibilities.png",
+    },
+    { id: "features", label: "Преимущества", icon: "public/img/features.png" },
+    { id: "for", label: "Для кого", icon: "public/img/for.png" },
+  ];
+
+  const [activeTab, setActiveTab] = useState(tabs[0]);
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabs.find((tab) => tab.id === tabId));
+  };
+
+  const currentInfo = info?.[activeTab.id];
+
+  return (
+    <>
+      <div id={id} className={`py-10 ${className}`}>
+        <div className="container flex flex-col gap-8">
+          <h2 className="text-center">{t(title)}</h2>
+          <div className="flex gap-4 w-full">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => handleTabClick(tab.id)}
+                className={`card w-full ${
+                  activeTab.id === tab.id ? "active" : ""
+                }`}
+              >
+                {t(tab.label)}
+              </button>
+            ))}
+          </div>
+
+          <div className="flex flex-col gap-4 w-1/3">
+            {currentInfo && (
+              <>
+                <img src={activeTab.icon} className="w-15 h-15" />
+                <h3 className="tab-title">{t(activeTab.label)}</h3>
+                <h4 className="tab-subtitle">{t(currentInfo.title)}</h4>
+                <div className="tab-text">
+                  {Array.isArray(currentInfo.text)
+                    ? currentInfo.text.map((textItem, index) => (
+                        <div
+                          key={index}
+                          className="flex items-center gap-2 mb-2"
+                        >
+                          <img
+                            src="public/img/check.svg"
+                            className="w-4 h-4"
+                          />
+                          <span>{t(textItem)}</span>
+                        </div>
+                      ))
+                    : t(currentInfo.text)}
+                </div>
+                <button className="mt-6">{t("Регистрация")}</button>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default InfoBlock;
