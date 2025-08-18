@@ -4,7 +4,7 @@ function Footer({ className = "" }) {
   const { t } = useTranslation();
   return (
     <>
-      <div className={`pt-8 pb-4 px-4 ${className}`}>
+      <div id="contacts" className={`pt-8 pb-4 px-4 ${className}`}>
         <div className="container flex flex-col justify-between gap-10">
           <div className="flex gap-8 items-start justify-between">
             <div className="flex flex-col gap-2">

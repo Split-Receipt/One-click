@@ -6,7 +6,7 @@ function Screen({ className = "" }) {
       <div
         className={`bg-[url('public/img/background.svg')] bg-[length:100%] bg-bottom bg-no-repeat ${className}`}
       >
-        <div className="bg-[url('public/img/pattern.png')] bg-[length:140%] bg-center w-screen h-screen flex flex-col items-center justify-center gap-10 relative">
+        <div className="bg-[url('public/img/pattern.png')] bg-[length:100%] bg-center w-screen h-screen flex flex-col items-center justify-center gap-10 relative">
           <div className="relative flex flex-col items-center gap-8">
             <img
               src="public/img/cursor.svg"
