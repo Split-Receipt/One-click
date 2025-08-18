@@ -79,7 +79,7 @@ function Tariffs({ className = "" }) {
                   <span>{t('Кнопки ссылки на ваши внешние ресурсы')}</span>
                 </div>
               </div>
-              <button className="mt-auto">{t("Купить")}</button>
+              <button className="mt-auto button--special">{t("Купить")}</button>
             </div>
             <div className="feature-card w-full py-5 px-3">
               <p className="uppercase text-xl text-white font-bold">

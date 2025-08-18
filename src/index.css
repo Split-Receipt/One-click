@@ -138,6 +138,28 @@ button:hover {
 
 .feature-card--special {
   border: 4px solid #9560eb;
+  position: relative;
+}
+
+.feature-card--special::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  background-color: #9560eb;
+  border-radius: 50%;
+}
+
+.feature-card--special::before {
+  content: url("public/img/star.svg");
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  z-index: 1;
 }
 
 .features-grid {
@@ -189,4 +211,9 @@ button:hover {
   background-position: bottom;
   background-repeat: no-repeat;
   z-index: 1;
+}
+
+.button--special {
+  background: linear-gradient(90deg, #9560eb 0%, #6060eb 100%);
+  color: #fff;
 }
