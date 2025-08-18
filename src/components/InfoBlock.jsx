@@ -49,9 +49,12 @@ function InfoBlock({ className = "", id, title, info }) {
             ))}
           </div>
 
-          <div className="flex flex-col gap-4 w-1/3">
+          <div className="w-1/3">
             {currentInfo && (
-              <>
+              <div
+                key={activeTab.id}
+                className="tab-content-animate flex flex-col gap-4"
+              >
                 <img src={activeTab.icon} className="w-15 h-15" />
                 <h3 className="tab-title">{t(activeTab.label)}</h3>
                 <h4 className="tab-subtitle">{t(currentInfo.title)}</h4>
@@ -69,7 +72,7 @@ function InfoBlock({ className = "", id, title, info }) {
                     : t(currentInfo.text)}
                 </div>
                 <button className="w-1/2 mt-6">{t("Регистрация")}</button>
-              </>
+              </div>
             )}
           </div>
         </div>
