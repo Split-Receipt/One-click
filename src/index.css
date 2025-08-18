@@ -94,7 +94,7 @@ button:hover {
 .card {
   background-color: #0d0d0d;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #1d1d1d;
   padding: 20px;
   min-width: 250px;
   text-align: center;
@@ -123,4 +123,65 @@ button:hover {
   background-size: cover;
   background-position: center center;
   position: relative;
+}
+
+.feature-card {
+  border: 1px solid #1d1d1d;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "a b c c"
+    "d d e f"
+    "d d g h";
+  gap: 1rem;
+}
+
+.area-a {
+  grid-area: a;
+}
+.area-b {
+  grid-area: b;
+}
+.area-c {
+  grid-area: c;
+}
+.area-d {
+  grid-area: d;
+  position: relative;
+}
+.area-e {
+  grid-area: e;
+}
+.area-f {
+  grid-area: f;
+}
+.area-g {
+  grid-area: g;
+}
+.area-h {
+  grid-area: h;
+}
+
+.area-d::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("public/img/phones.png");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: 1;
 }

@@ -54,16 +54,13 @@ function InfoBlock({ className = "", id, title, info }) {
                           key={index}
                           className="flex items-center gap-2 mb-2"
                         >
-                          <img
-                            src="public/img/check.svg"
-                            className="w-4 h-4"
-                          />
+                          <img src="public/img/check.svg" className="w-4 h-4" />
                           <span>{t(textItem)}</span>
                         </div>
                       ))
                     : t(currentInfo.text)}
                 </div>
-                <button className="mt-6">{t("Регистрация")}</button>
+                <button className="w-1/2 mt-6">{t("Регистрация")}</button>
               </>
             )}
           </div>
