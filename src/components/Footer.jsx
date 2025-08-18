@@ -1,10 +1,19 @@
 import { useTranslation } from "react-i18next";
+import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
 
 function Footer({ className = "" }) {
   const { t } = useTranslation();
+  const [footerRef, isFooterVisible] = useScrollAnimation(0.1, "-50px");
+
   return (
     <>
-      <div id="contacts" className={`pt-8 pb-4 px-4 ${className}`}>
+      <div
+        id="contacts"
+        ref={footerRef}
+        className={`pt-8 pb-4 px-4 scroll-animate-stagger ${
+          isFooterVisible ? "animate-in" : ""
+        } ${className}`}
+      >
         <div className="container flex flex-col justify-between gap-10">
           <div className="flex gap-8 items-start justify-between">
             <div className="flex flex-col gap-2">
@@ -43,7 +52,9 @@ function Footer({ className = "" }) {
               <p>{t("RUC 20606559578")}</p>
               <p>{t("Jr. Policarpo Caballero, Cusco")}</p>
               <a href="tel:+51953245941">+51 953245941</a>
-              <a href="mailto:soporteoneqliq@gmail.com">soporteoneqliq@gmail.com</a>
+              <a href="mailto:soporteoneqliq@gmail.com">
+                soporteoneqliq@gmail.com
+              </a>
             </div>
             <div className="flex flex-col gap-2">
               <h4>{t("Карта сайта")}</h4>

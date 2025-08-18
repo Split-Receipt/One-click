@@ -1,15 +1,27 @@
 import { useTranslation } from "react-i18next";
+import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
+
 function Features({ className = "" }) {
   const { t } = useTranslation();
+  const [featuresRef, isFeaturesVisible] = useScrollAnimation(0.1, "-50px");
+
   return (
     <>
-      <div id="features" className={`${className} py-10`}>
+      <div
+        id="features"
+        ref={featuresRef}
+        className={`${className} py-10 scroll-animate-stagger ${
+          isFeaturesVisible ? "animate-in" : ""
+        }`}
+      >
         <div className="container">
           <h2 className="text-center mb-8">{t("Преимущества")}</h2>
           <div className="features-grid">
             <div className="feature-card area-a py-8 px-5">
               <img src="public/img/copy.png" className="w-15 h-15" />
-              <h4 className="text-left">{t("Все нужные ссылки и\u00A0сведения")}</h4>
+              <h4 className="text-left">
+                {t("Все нужные ссылки и\u00A0сведения")}
+              </h4>
               <p className="text-left">
                 {t(
                   "Вся информация – в одно касание. Рассказывайте и показывайте, делитесь контактами, работами в портфолио, видео и многим другим. Принимайте оплату картой, на электронный кошелек или криптокошелек."

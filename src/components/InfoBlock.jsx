@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
 
 function InfoBlock({ className = "", id, title, info }) {
   const { t } = useTranslation();
+  const [infoRef, isInfoVisible] = useScrollAnimation(0.1, "-50px");
 
   const tabs = [
     {
@@ -24,7 +26,13 @@ function InfoBlock({ className = "", id, title, info }) {
 
   return (
     <>
-      <div id={id} className={`py-10 ${className}`}>
+      <div
+        id={id}
+        ref={infoRef}
+        className={`py-10 scroll-animate-stagger ${
+          isInfoVisible ? "animate-in" : ""
+        } ${className}`}
+      >
         <div className="container flex flex-col gap-8">
           <h2 className="text-center">{t(title)}</h2>
           <div className="flex gap-4 w-full">

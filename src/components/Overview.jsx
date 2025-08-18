@@ -1,9 +1,18 @@
 import { useTranslation } from "react-i18next";
+import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
+
 function Overview({ className = "" }) {
   const { t } = useTranslation();
+  const [overviewRef, isOverviewVisible] = useScrollAnimation(0.25, "0px");
+
   return (
     <>
-      <div className={`py-40 mt-[-250px] ellipse ${className}`}>
+      <div
+        ref={overviewRef}
+        className={`py-40 mt-[-250px] ellipse scroll-animate-stagger ${
+          isOverviewVisible ? "animate-in" : ""
+        } ${className}`}
+      >
         <div className="grid grid-cols-3 gap-4 container">
           <div className="card">
             <img src="public/img/card-1.png" />

@@ -1,10 +1,17 @@
 import { useTranslation } from "react-i18next";
+import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
+
 function Screen({ className = "" }) {
   const { t } = useTranslation();
+  const [screenRef, isScreenVisible] = useScrollAnimation(0.1, "-100px");
+
   return (
     <>
       <div
-        className={`bg-[url('public/img/background.svg')] bg-[length:100%] bg-bottom bg-no-repeat ${className}`}
+        ref={screenRef}
+        className={`bg-[url('public/img/background.svg')] bg-[length:100%] bg-bottom bg-no-repeat scroll-animate-stagger ${
+          isScreenVisible ? "animate-in" : ""
+        } ${className}`}
       >
         <div className="bg-[url('public/img/pattern.png')] bg-[length:100%] bg-center w-screen h-screen flex flex-col items-center justify-center gap-10 relative">
           <div className="relative flex flex-col items-center gap-8">
