@@ -42,8 +42,8 @@ function Footer({ className = "" }) {
               <p>{t("Creator RA Studio SAC")}</p>
               <p>{t("RUC 20606559578")}</p>
               <p>{t("Jr. Policarpo Caballero, Cusco")}</p>
-              <p>{t("+51 953245941")}</p>
-              <p>{t("soporteoneqliq@gmail.com")}</p>
+              <a href="tel:+51953245941">+51 953245941</a>
+              <a href="mailto:soporteoneqliq@gmail.com">soporteoneqliq@gmail.com</a>
             </div>
             <div className="flex flex-col gap-2">
               <h4>{t("Карта сайта")}</h4>

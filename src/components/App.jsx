@@ -6,6 +6,7 @@ import Action from "./Action.jsx";
 import Overview from "./Overview.jsx";
 import InfoBlock from "./InfoBlock.jsx";
 import Features from "./Features.jsx";
+import Tariffs from "./Tariffs.jsx";
 
 function App() {
   const { t } = useTranslation();
@@ -61,6 +62,7 @@ function App() {
       <InfoBlock id="menu" title={t("QR-меню или каталог")} info={info[1]} />
       <InfoBlock id="nfc" title={t("QR/NFC-визитка")} info={info[2]} />
       <Features />
+      <Tariffs />
       <Action />
       <Footer />
     </>
