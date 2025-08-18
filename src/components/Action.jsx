@@ -15,7 +15,7 @@ function Action({ className = "" }) {
       >
         <div className="bg-[url('public/img/pattern.png')] bg-cover bg-top px-10 py-20">
           <div className="container flex gap-20 items-center justify-between">
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-10 w-1/2">
               <h2 className="text-center">
                 {t("Создай свою")} <br /> {t("промо-страницу")} <br />{" "}
                 {t("за пять минут!")}
@@ -24,7 +24,7 @@ function Action({ className = "" }) {
             </div>
             <img
               src="public/img/mockup.jpg"
-              className="max-w-[548px] rounded-[20px]"
+              className="w-1/2 rounded-[20px]"
             />
           </div>
         </div>

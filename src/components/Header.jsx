@@ -46,7 +46,7 @@ function Header({ className = "" }) {
         } ${className}`}
       >
         <div>
-          <img src="public/img/logo.png" alt="logo" width={105} />
+          <img src="public/img/logo.png" width={105} />
         </div>
         <div className="flex gap-4">
           <a href="#page" className="text-[#9F9BA5]">

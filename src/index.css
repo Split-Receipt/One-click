@@ -18,6 +18,12 @@
   scroll-behavior: smooth;
 }
 
+@media (max-width: 950px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
 a {
   text-decoration: inherit;
 }
@@ -67,6 +73,30 @@ h4 {
   font-weight: 700;
 }
 
+@media (max-width: 950px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 button {
   border-radius: 10px;
   border: 1px solid transparent;
@@ -91,6 +121,25 @@ button:hover {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 300px;
+  }
 }
 
 .card {
@@ -121,9 +170,10 @@ button:hover {
 }
 
 .ellipse {
-  background-image: url("public/img/ellipse.svg");
-  background-size: cover;
-  background-position: center center;
+  background-image: url("public/img/ellipse-1.png");
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
   position: relative;
 }
 
