@@ -71,7 +71,7 @@ function InfoBlock({ className = "", id, title, info }) {
                       ))
                     : t(currentInfo.text)}
                 </div>
-                <button className="w-1/2 mt-6">{t("Регистрация")}</button>
+                <button className="w-1/2 mt-6"><a href="https://one-click.app/register">{t("Регистрация")}</a></button>
               </div>
             )}
           </div>

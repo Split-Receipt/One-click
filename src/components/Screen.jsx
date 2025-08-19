@@ -17,7 +17,7 @@ function Screen({ className = "" }) {
           <div className="relative flex flex-col items-center gap-8">
             <img
               src="public/img/cursor.svg"
-              className="absolute top-1/2 left-[-20%] -translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110"
+              className="absolute top-1/2 left-[-20%] -translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
               style={{
                 animation: "float-up-right 3s ease-in-out infinite",
                 transform: "translateY(0px)",
@@ -31,10 +31,10 @@ function Screen({ className = "" }) {
               {t("Подключись сейчас и получи вечный")} <br />{" "}
               {t("бесплатный доступ!")}
             </p>
-            <button className="bg-[#9560EB]">{t("Подключиться")}</button>
+            <button className="bg-[#9560EB]"><a href="https://one-click.app/register">{t("Подключиться")}</a></button>
             <img
               src="public/img/message.svg"
-              className="absolute top-1/2 right-[-21%] -translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110"
+              className="absolute top-1/2 right-[-21%] -translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
               style={{
                 animation: "float-down-left 3s ease-in-out infinite",
                 transform: "translateY(0px)",

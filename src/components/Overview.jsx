@@ -36,7 +36,7 @@ function Overview({ className = "" }) {
                 )}
               </p>
             </div>
-            <button className="w-full">{t("Узнать больше")}</button>
+            <button className="w-full"><a href="https://one-click.app/register">{t("Узнать больше")}</a></button>
           </div>
           <div className="card">
             <img src="public/img/card-2.png" />
@@ -53,7 +53,7 @@ function Overview({ className = "" }) {
                 )}
               </p>
             </div>
-            <button className="w-full">{t("Узнать больше")}</button>
+            <button className="w-full"><a href="https://one-click.app/register">{t("Узнать больше")}</a></button>
           </div>
           <div className="card">
             <img src="public/img/card-3.png" />
@@ -75,7 +75,7 @@ function Overview({ className = "" }) {
                 )}
               </p>
             </div>
-            <button className="w-full">{t("Узнать больше")}</button>
+            <button className="w-full"><a href="https://one-click.app/register">{t("Узнать больше")}</a></button>
           </div>
         </div>
       </div>

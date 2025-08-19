@@ -53,7 +53,7 @@ function Tariffs({ className = "" }) {
                   <span>{t("Логотип ONE CLICK")}</span>
                 </div>
               </div>
-              <button className="mt-auto">{t("Бесплатно")}</button>
+              <button className="mt-auto"><a href="https://one-click.app/register">{t("Бесплатно")}</a></button>
             </div>
             <div className="feature-card feature-card--special w-full py-5 px-3">
               <p className="uppercase text-xl text-white font-bold">
@@ -89,7 +89,7 @@ function Tariffs({ className = "" }) {
                   <span>{t("Кнопки ссылки на ваши внешние ресурсы")}</span>
                 </div>
               </div>
-              <button className="mt-auto button--special">{t("Купить")}</button>
+              <button className="mt-auto button--special"><a href="https://one-click.app/register">{t("Купить")}</a></button>
             </div>
             <div className="feature-card w-full py-5 px-3">
               <p className="uppercase text-xl text-white font-bold">
@@ -144,7 +144,7 @@ function Tariffs({ className = "" }) {
                   <span>{t("Без логотипа ONE CLICK")}</span>
                 </div>
               </div>
-              <button className="mt-auto">{t("Подписаться")}</button>
+              <button className="mt-auto"><a href="https://one-click.app/register">{t("Подписаться")}</a></button>
             </div>
             <div className="feature-card w-full py-5 px-3">
               <p className="uppercase text-xl text-white font-bold">
@@ -171,7 +171,7 @@ function Tariffs({ className = "" }) {
                   <span>{t("1 форма БРИФ")}</span>
                 </div>
               </div>
-              <button className="mt-auto">{t("Подписаться")}</button>
+              <button className="mt-auto"><a href="https://one-click.app/register">{t("Подписаться")}</a></button>
             </div>
             <div className="feature-card w-full py-5 px-3">
               <p className="uppercase text-xl text-white font-bold">
@@ -202,7 +202,7 @@ function Tariffs({ className = "" }) {
                   <span>{t("Колесо фортуны")}</span>
                 </div>
               </div>
-              <button className="mt-auto">{t("Подписаться")}</button>
+              <button className="mt-auto"><a href="https://one-click.app/register">{t("Подписаться")}</a></button>
             </div>
           </div>
         </div>

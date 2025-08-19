@@ -20,7 +20,11 @@ function Action({ className = "" }) {
                 {t("Создай свою")} <br /> {t("промо-страницу")} <br />{" "}
                 {t("за пять минут!")}
               </h2>
-              <button>{t("Подключиться бесплатно навсегда")}</button>
+              <button>
+                <a href="https://one-click.app/register">
+                  {t("Подключиться бесплатно навсегда")}
+                </a>
+              </button>
             </div>
             <img
               src="public/img/mockup.jpg"

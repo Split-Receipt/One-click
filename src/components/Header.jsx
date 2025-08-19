@@ -69,7 +69,7 @@ function Header({ className = "" }) {
           </a>
         </div>
         <div className="flex gap-4">
-          <a href="#">{t("Войти")}</a>
+          <a href="https://one-click.app/register">{t("Войти")}</a>
           <div className="relative" ref={languageMenuRef}>
             <a
               href="#"
