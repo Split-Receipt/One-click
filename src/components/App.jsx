@@ -24,6 +24,7 @@ function App() {
         for: {
             text: [t('Туристические объекты'), t('Производители товаров'), t('Музеи'), t('Выставки')],
         },
+        videos: ['public/video/swipe.webm'],
     },
     {
         id: "menu",
@@ -37,6 +38,7 @@ function App() {
         for: {
             text: [t('Кафе'), t('Рестораны'), t('Сувенирные киоски'), t('Интернет-магазины')],
         },
+        videos: ['public/video/chullos.webm', 'public/video/choco.webm'],
       },
       {
         id: "nfc",
@@ -50,6 +52,7 @@ function App() {
         for: {
             text: [t('Представители компаний'), t('Блогеры и медийные персоны'), t('Специалисты'), t('Творческие личности')],
         },
+        videos: ['public/video/randhy.webm'],
       },
   ];
 

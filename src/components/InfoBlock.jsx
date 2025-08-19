@@ -49,12 +49,9 @@ function InfoBlock({ className = "", id, title, info }) {
             ))}
           </div>
 
-          <div className="w-1/3">
-            {currentInfo && (
-              <div
-                key={activeTab.id}
-                className="tab-content-animate flex flex-col gap-4"
-              >
+          {currentInfo && (
+            <div className="grid grid-cols-2 gap-4 max-h-[600px] overflow-hidden">
+              <div key={activeTab.id} className="flex flex-col gap-4 tab-content-animate">
                 <img src={activeTab.icon} className="w-15 h-15" />
                 <h3 className="tab-title">{t(activeTab.label)}</h3>
                 <h4 className="tab-subtitle">{t(currentInfo.title)}</h4>
@@ -71,10 +68,19 @@ function InfoBlock({ className = "", id, title, info }) {
                       ))
                     : t(currentInfo.text)}
                 </div>
-                <button className="w-1/2 mt-6"><a href="https://one-click.app/register">{t("Регистрация")}</a></button>
+                <button className="w-1/2 mt-6">
+                  <a href="https://one-click.app/register">
+                    {t("Регистрация")}
+                  </a>
+                </button>
               </div>
-            )}
-          </div>
+              <div className="flex flex-col gap-4">
+                {info?.videos?.map((video, index) => (
+                  <video key={index} src={video} className="h-auto w-full" autoPlay loop muted />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </>
