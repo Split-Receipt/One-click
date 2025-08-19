@@ -69,10 +69,11 @@ function Header({ className = "" }) {
           </a>
         </div>
         <div className="flex gap-4">
-          <a href="https://one-click.app/register">{t("Войти")}</a>
+          <a href="https://one-click.app/register" className="text-[#9F9BA5]">{t("Войти")}</a>
           <div className="relative" ref={languageMenuRef}>
             <a
               href="#"
+              className="text-[#9F9BA5]"
               onClick={(e) => {
                 e.preventDefault();
                 setIsLanguageMenuOpen(!isLanguageMenuOpen);
@@ -91,7 +92,7 @@ function Header({ className = "" }) {
                       e.preventDefault();
                       handleLanguageChange(lang.code);
                     }}
-                    className={`block px-4 py-2 hover:text-white transition-colors ${
+                    className={`block px-4 py-2 hover:text-white transition-colors text-[#9F9BA5] ${
                       currentLanguage === lang.code ? "text-white" : ""
                     }`}
                   >
