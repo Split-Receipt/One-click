@@ -13,14 +13,13 @@ function Action({ className = "" }) {
           isActionVisible ? "animate-in" : ""
         } ${className}`}
       >
-        <div className="bg-[url('public/img/pattern.png')] bg-cover bg-top px-10 py-20">
-          <div className="container flex gap-20 items-center justify-between">
-            <div className="flex flex-col gap-10 w-1/2">
+        <div className="bg-[url('public/img/pattern.png')] bg-cover bg-top py-15 sm:py-20">
+          <div className="container flex flex-col gap-10 items-center justify-between sm:gap-15 md:gap-20 sm:flex-row">
+            <div className="flex flex-col gap-10 w-full sm:w-1/2 items-center">
               <h2 className="text-center">
-                {t("Создай свою")} <br /> {t("промо-страницу")} <br />{" "}
-                {t("за пять минут!")}
+                {t("Создай свою промо-страницу за пять минут!")}
               </h2>
-              <button>
+              <button className="w-full sm:max-w-[350px]">
                 <a href="https://one-click.app/register">
                   {t("Подключиться бесплатно навсегда")}
                 </a>
@@ -28,7 +27,7 @@ function Action({ className = "" }) {
             </div>
             <img
               src="public/img/mockup.jpg"
-              className="w-1/2 rounded-[20px]"
+              className="w-full sm:w-1/2 rounded-[20px]"
             />
           </div>
         </div>

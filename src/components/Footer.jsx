@@ -14,8 +14,8 @@ function Footer({ className = "" }) {
           isFooterVisible ? "animate-in" : ""
         } ${className}`}
       >
-        <div className="container flex flex-col justify-between gap-10">
-          <div className="flex gap-8 items-start justify-between">
+        <div className="max-w-[1200px] mx-auto flex flex-col justify-between gap-5 sm:gap-10">
+          <div className="flex gap-4 flex-col sm:flex-row items-start justify-between sm:gap-8">
             <div className="flex flex-col gap-2">
               <img
                 src="public/img/logo.png"
@@ -70,53 +70,46 @@ function Footer({ className = "" }) {
               <div className="grid gap-2 grid-cols-2 justify-items-center items-center">
                 <img
                   src="public/img/paypal.png"
-                  className="payment-icon"
-                  width={100}
+                  className="payment-icon w-20 sm:w-30"
                 />
                 <img
                   src="public/img/visa.png"
-                  className="payment-icon"
-                  width={90}
+                  className="payment-icon w-18 sm:w-25"
                 />
               </div>
               <div className="grid gap-2 grid-cols-2 justify-items-center items-center">
                 <img
                   src="public/img/mastercard.png"
-                  className="payment-icon"
-                  width={90}
+                  className="payment-icon w-18 sm:w-25"
                 />
                 <img
                   src="public/img/maestro.png"
-                  className="payment-icon"
-                  width={90}
+                  className="payment-icon w-18 sm:w-25"
                 />
               </div>
               <div className="grid gap-2 grid-cols-3 justify-items-center items-center">
                 <img
                   src="public/img/amexp.png"
-                  className="payment-icon"
-                  width={50}
+                  className="payment-icon w-12 sm:w-18"
                 />
                 <img
                   src="public/img/yape.png"
-                  className="payment-icon"
-                  width={50}
+                  className="payment-icon w-12 sm:w-18"
                 />
                 <img
                   src="public/img/plin.png"
-                  className="payment-icon"
-                  width={50}
+                  className="payment-icon w-12 sm:w-18"
                 />
               </div>
             </div>
           </div>
-          <div className="text-xs flex gap-5">
-            <span>{t("2025. Todos los derechos reservados")}</span>
-            <span>
+          <div className="text-xs flex flex-col gap-2 sm:flex-row sm:gap-5">
+            <div>{t("2025. Todos los derechos reservados")}</div>
+            <div>
               {t(
                 "Paginas QR, catalogos, menu y tarjetas de presentacion NFC para la vida y los negocios"
               )}
-            </span>
+            </div>
           </div>
         </div>
       </div>
