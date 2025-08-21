@@ -82,10 +82,10 @@ function Footer({ className = "" }) {
               <div className="grid gap-2 grid-cols-3 justify-items-center items-center">
                 <img
                   src="img/amexp.png"
-                  className="payment-icon w-12 sm:w-18"
+                  className="payment-icon w-12 sm:w-14"
                 />
-                <img src="img/yape.png" className="payment-icon w-12 sm:w-18" />
-                <img src="img/plin.png" className="payment-icon w-12 sm:w-18" />
+                <img src="img/yape.png" className="payment-icon w-12 sm:w-15" />
+                <img src="img/plin.png" className="payment-icon w-12 sm:w-15" />
               </div>
             </div>
           </div>
