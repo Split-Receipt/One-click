@@ -17,28 +17,23 @@ function Footer({ className = "" }) {
         <div className="max-w-[1200px] mx-auto flex flex-col justify-between gap-5 sm:gap-10">
           <div className="flex gap-4 flex-col sm:flex-row items-start justify-between sm:gap-8">
             <div className="flex flex-col gap-2">
-              <img
-                src="img/logo.png"
-                alt="logo"
-                width={145}
-                className="mb-3"
-              />
+              <img src="img/logo.png" alt="logo" width={145} className="mb-3" />
               <div className="flex gap-2 mb-2">
                 <a
                   href="#"
-                  className='bg-[url("img/fb.png")] bg-cover bg-center w-10 h-10 block'
+                  className='bg-[url("/img/fb.png")] bg-cover bg-center w-10 h-10 block'
                 />
                 <a
                   href="#"
-                  className='bg-[url("img/inst.png")] bg-cover bg-center w-10 h-10 block'
+                  className='bg-[url("/img/inst.png")] bg-cover bg-center w-10 h-10 block'
                 />
                 <a
                   href="#"
-                  className='bg-[url("img/tik.png")] bg-cover bg-center w-10 h-10 block'
+                  className='bg-[url("/img/tik.png")] bg-cover bg-center w-10 h-10 block'
                 />
                 <a
                   href="#"
-                  className='bg-[url("img/linkedin.png")] bg-cover bg-center w-10 h-10 block'
+                  className='bg-[url("/img/linkedin.png")] bg-cover bg-center w-10 h-10 block'
                 />
               </div>
               <a href="">{t("Политика конфиденциальности")}</a>
@@ -72,10 +67,7 @@ function Footer({ className = "" }) {
                   src="img/paypal.png"
                   className="payment-icon w-20 sm:w-30"
                 />
-                <img
-                  src="img/visa.png"
-                  className="payment-icon w-18 sm:w-25"
-                />
+                <img src="img/visa.png" className="payment-icon w-18 sm:w-25" />
               </div>
               <div className="grid gap-2 grid-cols-2 justify-items-center items-center">
                 <img
@@ -92,14 +84,8 @@ function Footer({ className = "" }) {
                   src="img/amexp.png"
                   className="payment-icon w-12 sm:w-18"
                 />
-                <img
-                  src="img/yape.png"
-                  className="payment-icon w-12 sm:w-18"
-                />
-                <img
-                  src="img/plin.png"
-                  className="payment-icon w-12 sm:w-18"
-                />
+                <img src="img/yape.png" className="payment-icon w-12 sm:w-18" />
+                <img src="img/plin.png" className="payment-icon w-12 sm:w-18" />
               </div>
             </div>
           </div>
