@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
+import VideoBlock from "./VideoBlock.jsx";
 
 function InfoBlock({ className = "", id, title, info }) {
   const { t } = useTranslation();
@@ -50,7 +51,7 @@ function InfoBlock({ className = "", id, title, info }) {
           </div>
 
           {currentInfo && (
-            <div className="grid grid-cols-2 gap-4 overflow-hidden">
+            <div className="grid grid-cols-2 gap-4 items-start overflow-hidden">
               <div
                 key={activeTab.id}
                 className="flex flex-col gap-4 tab-content-animate"
@@ -77,20 +78,7 @@ function InfoBlock({ className = "", id, title, info }) {
                   </a>
                 </button>
               </div>
-              <div className="flex flex-col gap-4 justify-center items-center relative  before:absolute before:inset-10 before:bg-gradient-to-b before:from-[#9560eb] before:to-transparent before:opacity-90 before:blur-[50px] before:rounded-full before:scale-80 before:-z-10">
-                <div className="h-full w-[200px] bg-[url('img/phonemockup.png')] bg-contain bg-no-repeat relative overflow-hidden max-h-[400px]">
-                  {info?.videos?.map((video, index) => (
-                    <video
-                      key={index}
-                      src={video}
-                      autoPlay
-                      className="absolute top-1/2 -translate-y-1/2 left-[50%] -translate-x-1/2 w-[180px] h-[95%] rounded-4xl max-h-[400px]"
-                      loop
-                      muted
-                    />
-                  ))}
-                </div>
-              </div>
+              <VideoBlock info={info} className="mt-10" />
             </div>
           )}
         </div>
