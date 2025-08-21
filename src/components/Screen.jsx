@@ -9,11 +9,11 @@ function Screen({ className = "" }) {
     <>
       <div
         ref={screenRef}
-        className={`bg-[url('img/background.svg')] bg-[length:100%] bg-bottom bg-no-repeat scroll-animate-stagger ${
+        className={`bg-[url('/img/background.svg')] bg-[length:100%] bg-bottom bg-no-repeat scroll-animate-stagger ${
           isScreenVisible ? "animate-in" : ""
         } ${className}`}
       >
-        <div className="bg-[url('img/pattern.png')] bg-[length:100%] bg-center w-screen h-screen flex flex-col items-center justify-center gap-10 relative">
+        <div className="bg-[url('/img/pattern.png')] bg-[length:100%] bg-center w-screen h-screen flex flex-col items-center justify-center gap-10 relative">
           <div className="relative flex flex-col items-center gap-8">
             <img
               src="img/cursor.svg"
