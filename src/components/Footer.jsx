@@ -18,7 +18,7 @@ function Footer({ className = "" }) {
           <div className="flex gap-4 flex-col sm:flex-row items-start justify-between sm:gap-8">
             <div className="flex flex-col gap-2">
               <img
-                src="public/img/logo.png"
+                src="img/logo.png"
                 alt="logo"
                 width={145}
                 className="mb-3"
@@ -26,19 +26,19 @@ function Footer({ className = "" }) {
               <div className="flex gap-2 mb-2">
                 <a
                   href="#"
-                  className='bg-[url("public/img/fb.png")] bg-cover bg-center w-10 h-10 block'
+                  className='bg-[url("img/fb.png")] bg-cover bg-center w-10 h-10 block'
                 />
                 <a
                   href="#"
-                  className='bg-[url("public/img/inst.png")] bg-cover bg-center w-10 h-10 block'
+                  className='bg-[url("img/inst.png")] bg-cover bg-center w-10 h-10 block'
                 />
                 <a
                   href="#"
-                  className='bg-[url("public/img/tik.png")] bg-cover bg-center w-10 h-10 block'
+                  className='bg-[url("img/tik.png")] bg-cover bg-center w-10 h-10 block'
                 />
                 <a
                   href="#"
-                  className='bg-[url("public/img/linkedin.png")] bg-cover bg-center w-10 h-10 block'
+                  className='bg-[url("img/linkedin.png")] bg-cover bg-center w-10 h-10 block'
                 />
               </div>
               <a href="">{t("Политика конфиденциальности")}</a>
@@ -69,35 +69,35 @@ function Footer({ className = "" }) {
               <h4>{t("Методы оплаты")}</h4>
               <div className="grid gap-2 grid-cols-2 justify-items-center items-center">
                 <img
-                  src="public/img/paypal.png"
+                  src="img/paypal.png"
                   className="payment-icon w-20 sm:w-30"
                 />
                 <img
-                  src="public/img/visa.png"
+                  src="img/visa.png"
                   className="payment-icon w-18 sm:w-25"
                 />
               </div>
               <div className="grid gap-2 grid-cols-2 justify-items-center items-center">
                 <img
-                  src="public/img/mastercard.png"
+                  src="img/mastercard.png"
                   className="payment-icon w-18 sm:w-25"
                 />
                 <img
-                  src="public/img/maestro.png"
+                  src="img/maestro.png"
                   className="payment-icon w-18 sm:w-25"
                 />
               </div>
               <div className="grid gap-2 grid-cols-3 justify-items-center items-center">
                 <img
-                  src="public/img/amexp.png"
+                  src="img/amexp.png"
                   className="payment-icon w-12 sm:w-18"
                 />
                 <img
-                  src="public/img/yape.png"
+                  src="img/yape.png"
                   className="payment-icon w-12 sm:w-18"
                 />
                 <img
-                  src="public/img/plin.png"
+                  src="img/plin.png"
                   className="payment-icon w-12 sm:w-18"
                 />
               </div>

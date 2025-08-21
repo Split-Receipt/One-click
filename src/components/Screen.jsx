@@ -9,14 +9,14 @@ function Screen({ className = "" }) {
     <>
       <div
         ref={screenRef}
-        className={`bg-[url('public/img/background.svg')] bg-[length:100%] bg-bottom bg-no-repeat scroll-animate-stagger ${
+        className={`bg-[url('img/background.svg')] bg-[length:100%] bg-bottom bg-no-repeat scroll-animate-stagger ${
           isScreenVisible ? "animate-in" : ""
         } ${className}`}
       >
-        <div className="bg-[url('public/img/pattern.png')] bg-[length:100%] bg-center w-screen h-screen flex flex-col items-center justify-center gap-10 relative">
+        <div className="bg-[url('img/pattern.png')] bg-[length:100%] bg-center w-screen h-screen flex flex-col items-center justify-center gap-10 relative">
           <div className="relative flex flex-col items-center gap-8">
             <img
-              src="public/img/cursor.svg"
+              src="img/cursor.svg"
               className="absolute top-1/2 left-[-20%] -translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
               style={{
                 animation: "float-up-right 3s ease-in-out infinite",
@@ -31,9 +31,11 @@ function Screen({ className = "" }) {
               {t("Подключись сейчас и получи вечный")} <br />{" "}
               {t("бесплатный доступ!")}
             </p>
-            <button className="bg-[#9560EB]"><a href="https://one-click.app/register">{t("Подключиться")}</a></button>
+            <button className="bg-[#9560EB]">
+              <a href="https://one-click.app/register">{t("Подключиться")}</a>
+            </button>
             <img
-              src="public/img/message.svg"
+              src="img/message.svg"
               className="absolute top-1/2 right-[-21%] -translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
               style={{
                 animation: "float-down-left 3s ease-in-out infinite",

@@ -10,10 +10,10 @@ function InfoBlock({ className = "", id, title, info }) {
     {
       id: "possibilities",
       label: "Возможности",
-      icon: "public/img/possibilities.png",
+      icon: "img/possibilities.png",
     },
-    { id: "features", label: "Преимущества", icon: "public/img/features.png" },
-    { id: "for", label: "Для кого", icon: "public/img/for.png" },
+    { id: "features", label: "Преимущества", icon: "img/features.png" },
+    { id: "for", label: "Для кого", icon: "img/for.png" },
   ];
 
   const [activeTab, setActiveTab] = useState(tabs[0]);
@@ -62,7 +62,7 @@ function InfoBlock({ className = "", id, title, info }) {
                           key={index}
                           className="flex items-center gap-2 mb-2"
                         >
-                          <img src="public/img/check.svg" className="w-4 h-4" />
+                          <img src="img/check.svg" className="w-4 h-4" />
                           <span>{t(textItem)}</span>
                         </div>
                       ))

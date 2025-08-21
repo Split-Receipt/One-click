@@ -9,11 +9,11 @@ function Action({ className = "" }) {
     <>
       <div
         ref={actionRef}
-        className={`bg-[linear-gradient(to_bottom,black,transparent),url('public/img/background.svg')] bg-cover bg-center bg-no-repeat scroll-animate-stagger ${
+        className={`bg-[linear-gradient(to_bottom,black,transparent),url('img/background.svg')] bg-cover bg-center bg-no-repeat scroll-animate-stagger ${
           isActionVisible ? "animate-in" : ""
         } ${className}`}
       >
-        <div className="bg-[url('public/img/pattern.png')] bg-cover bg-top py-15 sm:py-20">
+        <div className="bg-[url('img/pattern.png')] bg-cover bg-top py-15 sm:py-20">
           <div className="container flex flex-col gap-10 items-center justify-between sm:gap-15 md:gap-20 sm:flex-row">
             <div className="flex flex-col gap-10 w-full sm:w-1/2 items-center">
               <h2 className="text-center">
@@ -26,7 +26,7 @@ function Action({ className = "" }) {
               </button>
             </div>
             <img
-              src="public/img/mockup.jpg"
+              src="img/mockup.jpg"
               className="w-full sm:w-1/2 rounded-[20px]"
             />
           </div>

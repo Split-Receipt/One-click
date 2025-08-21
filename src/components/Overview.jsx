@@ -15,7 +15,7 @@ function Overview({ className = "" }) {
       >
         <div className="grid grid-cols-3 gap-4 container">
           <div className="card">
-            <img src="public/img/card-1.png" />
+            <img src="img/card-1.png" />
             <div className="flex flex-col gap-2 mb-2">
               <h4>{t("Динамический QR")}</h4>
               <p>
@@ -39,7 +39,7 @@ function Overview({ className = "" }) {
             <button className="w-full"><a href="https://one-click.app/register">{t("Узнать больше")}</a></button>
           </div>
           <div className="card">
-            <img src="public/img/card-2.png" />
+            <img src="img/card-2.png" />
             <div className="flex flex-col gap-2 mb-2">
               <h4>{t("QR-меню или каталог")}</h4>
               <p>
@@ -56,7 +56,7 @@ function Overview({ className = "" }) {
             <button className="w-full"><a href="https://one-click.app/register">{t("Узнать больше")}</a></button>
           </div>
           <div className="card">
-            <img src="public/img/card-3.png" />
+            <img src="img/card-3.png" />
             <div className="flex flex-col gap-2 mb-2">
               <h4>{t("QR/NFC-визитка")}</h4>
               <p>
