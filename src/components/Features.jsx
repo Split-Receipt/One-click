@@ -40,8 +40,8 @@ function Features({ className = "" }) {
             <div className="feature-card area-c py-8 px-5">video</div>
             <div className="feature-card area-d bg-[url('/img/background.svg')] bg-cover bg-top py-8 px-5">
               <div className="bg-[url('/img/pattern.png')] bg-cover bg-top h-full w-full text-left">
-                <h3 className="mb-2">{t("Стильно. Удобно. Эффективно.")}</h3>
-                <h4 className="mb-5">{t("Выбери свое решение")}</h4>
+                <h3 className="mb-2 relative z-10">{t("Стильно. Удобно. Эффективно.")}</h3>
+                <h4 className="mb-5 relative z-10">{t("Выбери свое решение")}</h4>
                 <button><a href="https://one-click.app/register">{t("Подключиться")}</a></button>
               </div>
             </div>

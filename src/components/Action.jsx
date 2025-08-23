@@ -27,7 +27,7 @@ function Action({ className = "" }) {
             </div>
             <img
               src="img/mockup.jpg"
-              className="w-full sm:w-1/2 rounded-[20px]"
+              className="w-[300px] sm:w-1/2 rounded-[20px]"
             />
           </div>
         </div>

@@ -129,6 +129,8 @@ button:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  min-width: 300px;
+  box-sizing: content-box;
 }
 
 @media (max-width: 1200px) {
@@ -139,13 +141,19 @@ button:hover {
 
 @media (max-width: 900px) {
   .container {
-    max-width: 90%;
+    max-width: 768px;
   }
 }
 
 @media (max-width: 640px) {
   .container {
-    max-width: 310px;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    max-width: 300px;
   }
 }
 
@@ -173,6 +181,12 @@ button:hover {
 
   &:hover {
     scale: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 10px;
   }
 }
 
@@ -271,6 +285,31 @@ button:hover {
   background-repeat: no-repeat;
   z-index: 0;
 }
+
+@media (max-width: 900px) {
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 400px 1fr 1fr;
+    grid-template-areas: "a b" "c d" "e f" "g h";
+  }
+  .area-d::after {
+    background-position: bottom right;
+    background-size: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .area-d, .area-c {
+    height: 350px;
+  }
+}
+
 
 .button--special {
   background: linear-gradient(90deg, #9560eb 0%, #6060eb 100%);

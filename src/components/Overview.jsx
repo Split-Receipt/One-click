@@ -9,13 +9,13 @@ function Overview({ className = "" }) {
     <>
       <div
         ref={overviewRef}
-        className={`py-40 mt-[-280px] ellipse scroll-animate-stagger ${
+        className={`md:py-40 pt-30 pb-10 mt-[-280px] ellipse scroll-animate-stagger ${
           isOverviewVisible ? "animate-in" : ""
         } ${className}`}
       >
-        <div className="grid grid-cols-3 gap-4 container">
-          <div className="card">
-            <img src="img/card-1.png" />
+        <div className="md:grid md:grid-cols-3 md:grid-rows-1 grid-cols-1 grid-rows-3 gap-4 container">
+          <div className="card mb-5 md:mb-0">
+            <img src="img/card-1.png" className="scale-80 md:scale-100 block" />
             <div className="flex flex-col gap-2 mb-2">
               <h4>{t("Динамический QR")}</h4>
               <p>
@@ -36,10 +36,12 @@ function Overview({ className = "" }) {
                 )}
               </p>
             </div>
-            <button className="w-full"><a href="https://one-click.app/register">{t("Узнать больше")}</a></button>
+            <button className="w-full">
+              <a href="https://one-click.app/register">{t("Узнать больше")}</a>
+            </button>
           </div>
-          <div className="card">
-            <img src="img/card-2.png" />
+          <div className="card mb-5 md:mb-0">
+            <img src="img/card-2.png" className="scale-80 md:scale-100" />
             <div className="flex flex-col gap-2 mb-2">
               <h4>{t("QR-меню или каталог")}</h4>
               <p>
@@ -53,10 +55,12 @@ function Overview({ className = "" }) {
                 )}
               </p>
             </div>
-            <button className="w-full"><a href="https://one-click.app/register">{t("Узнать больше")}</a></button>
+            <button className="w-full">
+              <a href="https://one-click.app/register">{t("Узнать больше")}</a>
+            </button>
           </div>
-          <div className="card">
-            <img src="img/card-3.png" />
+          <div className="card mb-5 md:mb-0">
+            <img src="img/card-3.png" className="scale-80 md:scale-100" />
             <div className="flex flex-col gap-2 mb-2">
               <h4>{t("QR/NFC-визитка")}</h4>
               <p>
@@ -75,7 +79,9 @@ function Overview({ className = "" }) {
                 )}
               </p>
             </div>
-            <button className="w-full"><a href="https://one-click.app/register">{t("Узнать больше")}</a></button>
+            <button className="w-full">
+              <a href="https://one-click.app/register">{t("Узнать больше")}</a>
+            </button>
           </div>
         </div>
       </div>
