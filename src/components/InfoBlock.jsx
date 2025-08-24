@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
 import VideoBlock from "./VideoBlock.jsx";
 
 function InfoBlock({ className = "", id, title, info }) {
   const { t } = useTranslation();
   const [infoRef, isInfoVisible] = useScrollAnimation(0.1, "-50px");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const tabs = [
     {
@@ -21,7 +23,25 @@ function InfoBlock({ className = "", id, title, info }) {
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabs.find((tab) => tab.id === tabId));
+    setIsDropdownOpen(false);
   };
+
+  const handleDropdownToggle = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const currentInfo = info?.[activeTab.id];
 
@@ -30,13 +50,14 @@ function InfoBlock({ className = "", id, title, info }) {
       <div
         id={id}
         ref={infoRef}
-        className={`py-10 scroll-animate-stagger ${
+        className={`py-7 md:py-10 scroll-animate-stagger ${
           isInfoVisible ? "animate-in" : ""
         } ${className}`}
       >
         <div className="container flex flex-col gap-8">
           <h2 className="text-center">{t(title)}</h2>
-          <div className="flex gap-4 w-full">
+
+          <div className="hidden md:flex gap-4 w-full">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -48,6 +69,46 @@ function InfoBlock({ className = "", id, title, info }) {
                 {t(tab.label)}
               </button>
             ))}
+          </div>
+
+          <div className="md:hidden relative" ref={dropdownRef}>
+            <button
+              onClick={handleDropdownToggle}
+              className={`card w-full ${
+                activeTab.id === activeTab.id ? "active" : ""
+              }`}
+            >
+              <div className="flex items-center justify-between">
+                <span className="flex-1 text-center">{t(activeTab.label)}</span>
+                <img
+                  src="img/arrow.svg"
+                  className={`w-6 h-6 transition-transform duration-600 ${
+                    isDropdownOpen ? "rotate-180" : ""
+                  }`}
+                  alt="arrow"
+                />
+              </div>
+            </button>
+
+            <div
+              className={`absolute top-full left-0 mt-2 w-full bg-[#0D0D0D] border border-[#332B40] rounded-[10px] shadow-lg z-20 transition-all duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] ${
+                isDropdownOpen
+                  ? "opacity-100 transform translate-y-0"
+                  : "opacity-0 transform -translate-y-2 pointer-events-none"
+              }`}
+            >
+              {tabs
+                .filter((tab) => tab.id !== activeTab.id)
+                .map((tab) => (
+                  <div
+                    key={tab.id}
+                    onClick={() => handleTabClick(tab.id)}
+                    className="block w-full px-4 py-3 text-left hover:text-white transition-colors text-[#9F9BA5] border-b border-[#332B40] last:border-b-0 cursor-pointer"
+                  >
+                    {t(tab.label)}
+                  </div>
+                ))}
+            </div>
           </div>
 
           {currentInfo && (

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,6 +8,7 @@ function Tariffs({ className = "" }) {
   const { t } = useTranslation();
   const [tariffsRef, isTariffsVisible] = useScrollAnimation(0.1, "-50px");
   const [activeTab, setActiveTab] = useState("monthly");
+  const swiperRef = useRef(null);
 
   const tabs = [
     {
@@ -121,7 +122,7 @@ function Tariffs({ className = "" }) {
       <div
         id="tariffs"
         ref={tariffsRef}
-        className={`${className} py-10 scroll-animate-stagger ${
+        className={`${className} py-7 md:py-10 scroll-animate-stagger ${
           isTariffsVisible ? "animate-in" : ""
         }`}
       >
@@ -149,6 +150,7 @@ function Tariffs({ className = "" }) {
             <a href="tel:+51953245941">+51 953245941</a>
           </p>
           <Swiper
+            ref={swiperRef}
             spaceBetween={10}
             slidesPerView={1}
             modules={[Pagination, Autoplay]}
@@ -178,6 +180,9 @@ function Tariffs({ className = "" }) {
               },
             }}
             className="w-full"
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
           >
             {tariffsData.map((tariff, index) => (
               <SwiperSlide key={index} className="p-2">

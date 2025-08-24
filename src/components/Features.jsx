@@ -10,7 +10,7 @@ function Features({ className = "" }) {
       <div
         id="features"
         ref={featuresRef}
-        className={`${className} py-10 scroll-animate-stagger ${
+        className={`${className} py-7 md:py-10 scroll-animate-stagger ${
           isFeaturesVisible ? "animate-in" : ""
         }`}
       >

@@ -66,7 +66,7 @@ function Header({ className = "" }) {
     <>
       <div
         ref={headerRef}
-        className={`flex justify-between items-center bg-[#0D0D0D] border border-[#332B40] rounded-[10px] fixed top-4 md:px-4 px-2 py-4 max-w-[1200px] w-[calc(100%-30px)] left-1/2 -translate-x-1/2 z-10 scroll-animate ${
+        className={`flex justify-between items-center bg-[#0D0D0D] border border-[#332B40] rounded-[10px] fixed top-4 left-1/2 -translate-x-1/2 z-10 scroll-animate px-4 py-4 max-w-[1200px] w-[calc(100%-32px)] ${
           isHeaderVisible ? "animate-in" : ""
         } ${className}`}
       >
