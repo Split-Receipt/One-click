@@ -51,7 +51,7 @@ function InfoBlock({ className = "", id, title, info }) {
           </div>
 
           {currentInfo && (
-            <div className="grid grid-cols-2 gap-4 items-start overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-4 items-start overflow-hidden">
               <div
                 key={activeTab.id}
                 className="flex flex-col gap-4 tab-content-animate"

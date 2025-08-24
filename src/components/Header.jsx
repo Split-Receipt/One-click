@@ -6,8 +6,24 @@ function Header({ className = "" }) {
   const { t } = useTranslation();
   const [headerRef, isHeaderVisible] = useScrollAnimation(0.1, "-50px");
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState("RU");
   const languageMenuRef = useRef(null);
+
+  const menuItems = [
+    { href: "#page", key: t("QR-страница") },
+    { href: "#menu", key: t("QR-меню и каталоги") },
+    { href: "#nfc", key: t("NFC-визитки") },
+    { href: "#features", key: t("Преимущества") },
+    { href: "#tariffs", key: t("Тарифы") },
+    { href: "#contacts", key: t("Контакты") },
+  ];
+
+  const languages = [
+    { code: "EN", name: t("English") },
+    { code: "ES", name: t("Español") },
+    { code: "RU", name: t("Русский") },
+  ];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -28,48 +44,52 @@ function Header({ className = "" }) {
   const handleLanguageChange = (language) => {
     setCurrentLanguage(language);
     setIsLanguageMenuOpen(false);
-    // i18n.changeLanguage(language.toLowerCase());
   };
 
-  const languages = [
-    { code: "EN", name: "English" },
-    { code: "ES", name: "Español" },
-    { code: "RU", name: "Русский" },
-  ];
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const renderMenuItems = (className = "") => {
+    return menuItems.map((item) => (
+      <a
+        key={item.key}
+        href={item.href}
+        className={`text-[#9F9BA5] hover:text-white transition-colors ${className}`}
+      >
+        {item.key}
+      </a>
+    ));
+  };
 
   return (
     <>
       <div
         ref={headerRef}
-        className={`flex justify-between items-center bg-[#0D0D0D] border border-[#332B40] rounded-[10px] fixed top-4 p-4 max-w-[1200px] w-full left-1/2 -translate-x-1/2 z-10 scroll-animate ${
+        className={`flex justify-between items-center bg-[#0D0D0D] border border-[#332B40] rounded-[10px] fixed top-4 md:px-4 px-2 py-4 max-w-[1200px] w-[calc(100%-30px)] left-1/2 -translate-x-1/2 z-10 scroll-animate ${
           isHeaderVisible ? "animate-in" : ""
         } ${className}`}
       >
         <div>
-          <img src="img/logo.png" width={105} />
+          <img src="img/logo.png" className="w-25 md:w-30" />
         </div>
-        <div className="flex gap-4">
-          <a href="#page" className="text-[#9F9BA5]">
-            {t("QR-страница")}
-          </a>
-          <a href="#menu" className="text-[#9F9BA5]">
-            {t("QR-меню и каталоги")}
-          </a>
-          <a href="#nfc" className="text-[#9F9BA5]">
-            {t("NFC-визитки")}
-          </a>
-          <a href="#features" className="text-[#9F9BA5]">
-            {t("Преимущества")}
-          </a>
-          <a href="#tariffs" className="text-[#9F9BA5]">
-            {t("Тарифы")}
-          </a>
-          <a href="#contacts" className="text-[#9F9BA5]">
-            {t("Контакты")}
-          </a>
+
+        <div className="hidden lg:flex gap-4">{renderMenuItems()}</div>
+
+        <div
+          className={`absolute top-full left-0 right-0 mt-2 bg-[#0D0D0D] border border-[#332B40] rounded-[10px] p-4 lg:hidden transition-all duration-300 ease-in-out transform ${
+            isMobileMenuOpen
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-2 pointer-events-none"
+          }`}
+        >
+          <div className="flex flex-col gap-3">{renderMenuItems("py-2")}</div>
         </div>
-        <div className="flex gap-4">
-          <a href="https://one-click.app/register" className="text-[#9F9BA5]">{t("Войти")}</a>
+
+        <div className="flex gap-4 items-center">
+          <a href="https://one-click.app/register" className="text-[#9F9BA5]">
+            {t("Войти")}
+          </a>
           <div className="relative" ref={languageMenuRef}>
             <a
               href="#"
@@ -101,6 +121,13 @@ function Header({ className = "" }) {
                 ))}
               </div>
             )}
+          </div>
+          <div
+            onClick={toggleMobileMenu}
+            className="lg:hidden cursor-pointer"
+            aria-label="Toggle mobile menu"
+          >
+            <img src="img/menu.svg" className="w-8 h-6" alt="Menu" />
           </div>
         </div>
       </div>

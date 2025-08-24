@@ -9,7 +9,7 @@ function Overview({ className = "" }) {
     <>
       <div
         ref={overviewRef}
-        className={`md:py-40 pt-30 pb-10 mt-[-280px] ellipse scroll-animate-stagger ${
+        className={`md:pt-40 pt-30 pb-10 mt-[-280px] ellipse scroll-animate-stagger ${
           isOverviewVisible ? "animate-in" : ""
         } ${className}`}
       >

@@ -12,7 +12,7 @@ function Tariffs({ className = "" }) {
   const tabs = [
     {
       id: "monthly",
-      label: t("1 месяц"),
+      label: t("1\u00A0месяц"),
       discount: 0,
     },
     {
@@ -127,12 +127,12 @@ function Tariffs({ className = "" }) {
       >
         <div className="container text-center">
           <h2 className="md:mb-8 mb-5">{t("Тарифы")}</h2>
-          <div className="flex items-center justify-between mb-4 md:mb-6 bg-[#0D0D0D] border border-[#3D3D3D] max-w-[470px] min-w-[300px] w-fit mx-auto rounded-lg">
+          <div className="flex items-center justify-between mb-4 md:mb-6 bg-[#0D0D0D] border border-[#3D3D3D] h-[60px] max-w-[470px] min-w-[300px] w-fit mx-auto rounded-lg">
             {tabs.map((tab) => (
               <div
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`md:p-4 p-2 rounded-md transition-colors font-bold border ${
+                className={`md:p-4 p-2 rounded-md transition-colors font-bold border cursor-pointer min-w-[75px] h-full flex items-center justify-center hover:text-[#9560EB] ${
                   activeTab === tab.id
                     ? "bg-[#9560EB] text-white border-[#AA80EE] "
                     : "border-[#0D0D0D]"
@@ -142,9 +142,9 @@ function Tariffs({ className = "" }) {
               </div>
             ))}
           </div>
-          <p className="mb-5 text-sm">
+          <p className="mb-5 text-sm max-w-[470px] min-w-[300px] w-fit mx-auto">
             {t(
-              `При подписке на 1 год получаете скидку 50%, при подписке на 2 года — свяжитесь с нами`
+              `При подписке на 1 год получаете скидку 50%, при подписке на 2 года\u00A0—\u00A0свяжитесь с нами`
             )}{" "}
             <a href="tel:+51953245941">+51 953245941</a>
           </p>
