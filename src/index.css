@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
 
 :root {
   font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -319,6 +323,33 @@ button:hover {
 .button--special:hover {
   color: #ffffff;
 }
+
+/* swiper */
+
+.swiper {
+  padding: 0 0 25px;
+  height: 100%;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.swiper-pagination {
+  padding: 5px 0;
+  bottom: -10px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet--active {
+  background-color: #9560eb !important;
+  opacity: 1 !important;
+}
+
+/* animations */
 
 .scroll-animate {
   opacity: 0;

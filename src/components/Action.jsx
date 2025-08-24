@@ -13,7 +13,7 @@ function Action({ className = "" }) {
           isActionVisible ? "animate-in" : ""
         } ${className}`}
       >
-        <div className="bg-[url('/img/pattern.png')] bg-cover bg-top py-15 sm:py-20">
+        <div className="bg-[url('/img/pattern.png')] bg-cover bg-top py-10 sm:py-20">
           <div className="container flex flex-col gap-10 items-center justify-between sm:gap-15 md:gap-20 sm:flex-row">
             <div className="flex flex-col gap-10 w-full sm:w-1/2 items-center">
               <h2 className="text-center">
