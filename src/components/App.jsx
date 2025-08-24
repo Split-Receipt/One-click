@@ -98,7 +98,7 @@ function App() {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Screen />
       <Overview />
       <InfoBlock id="page" title={t("QR-страница")} info={info[0]} />

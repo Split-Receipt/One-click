@@ -14,7 +14,7 @@ function Screen({ className = "" }) {
         } ${className}`}
       >
         <div className="bg-[url('/img/pattern.png')] bg-[length:100%] bg-center w-screen h-screen flex flex-col items-center justify-center gap-10 relative md:px-10 px-5">
-          <div className="relative flex flex-col items-center gap-8">
+          <div className="relative flex flex-col items-center md:gap-8 gap-5">
             <img
               src="img/cursor.svg"
               className="absolute top-[-90px] left-0 md:top-[-150px] xl:top-1/2 xl:left-[-20%] xl:-translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
@@ -27,9 +27,8 @@ function Screen({ className = "" }) {
               {t("One\u00A0click\u00A0—\u00A0твой")} <br /> {t("персональный инструмент")}{" "}
               <br /> {t("контактов и\u00A0продаж")}
             </h1>
-            <p className="text-center md:text-2xl text-lg">
-              {t("Подключись сейчас и получи вечный")} <br className="hidden md:block" />{" "}
-              {t("бесплатный доступ!")}
+            <p className="text-center md:text-2xl text-lg md:w-1/2 w-full">
+              {t("Подключись сейчас и получи вечный бесплатный доступ!")}
             </p>
             <button className="bg-[#9560EB]">
               <a href="https://one-click.app/register">{t("Подключиться")}</a>
