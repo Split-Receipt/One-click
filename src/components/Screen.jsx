@@ -9,7 +9,7 @@ function Screen({ className = "" }) {
     <>
       <div
         ref={screenRef}
-        className={`bg-[url('/img/background.svg')] bg-[length:100%] bg-bottom bg-no-repeat scroll-animate-stagger ${
+        className={`bg-[url('/img/background.svg')] bg-cover lg:bg-[length:100%] lg:bg-bottom bg-top bg-no-repeat scroll-animate-stagger ${
           isScreenVisible ? "animate-in" : ""
         } ${className}`}
       >
@@ -17,7 +17,7 @@ function Screen({ className = "" }) {
           <div className="relative flex flex-col items-center gap-8">
             <img
               src="img/cursor.svg"
-              className="absolute top-[-25%] left-0 md:top-1/2 md:left-[-20%] md:-translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
+              className="absolute top-[-90px] left-0 md:top-[-150px] xl:top-1/2 xl:left-[-20%] xl:-translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
               style={{
                 animation: "float-up-right 3s ease-in-out infinite",
                 transform: "translateY(0px)",
@@ -36,7 +36,7 @@ function Screen({ className = "" }) {
             </button>
             <img
               src="img/message.svg"
-              className="absolute bottom-[-25%] right-0 md:top-1/2 md:right-[-21%] md:-translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
+              className="absolute bottom-[-25%] right-0 xl:top-1/2 xl:right-[-21%] xl:-translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
               style={{
                 animation: "float-down-left 3s ease-in-out infinite",
                 transform: "translateY(0px)",

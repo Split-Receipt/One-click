@@ -12,11 +12,11 @@ function InfoBlock({ className = "", id, title, info }) {
   const tabs = [
     {
       id: "possibilities",
-      label: "Возможности",
+      label: t("Возможности"),
       icon: "img/possibilities.png",
     },
-    { id: "features", label: "Преимущества", icon: "img/features.png" },
-    { id: "for", label: "Для кого", icon: "img/for.png" },
+    { id: "features", label: t("Преимущества"), icon: "img/features.png" },
+    { id: "for", label: t("Для кого"), icon: "img/for.png" },
   ];
 
   const [activeTab, setActiveTab] = useState(tabs[0]);
@@ -66,7 +66,7 @@ function InfoBlock({ className = "", id, title, info }) {
                   activeTab.id === tab.id ? "active" : ""
                 }`}
               >
-                {t(tab.label)}
+                {tab.label}
               </button>
             ))}
           </div>
@@ -105,7 +105,7 @@ function InfoBlock({ className = "", id, title, info }) {
                     onClick={() => handleTabClick(tab.id)}
                     className="block w-full px-4 py-3 text-left hover:text-white transition-colors text-[#9F9BA5] border-b border-[#332B40] last:border-b-0 cursor-pointer"
                   >
-                    {t(tab.label)}
+                    {tab.label}
                   </div>
                 ))}
             </div>
