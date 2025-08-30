@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect } from "react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
-import VideoBlock from "./VideoBlock.jsx";
 
-function InfoBlock({ className = "", id, title, info }) {
+function InfoBlock({ className = "", title, info }) {
   const { t } = useTranslation();
   const [infoRef, isInfoVisible] = useScrollAnimation(0.1, "-50px");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -48,7 +47,7 @@ function InfoBlock({ className = "", id, title, info }) {
   return (
     <>
       <div
-        id={id}
+        id="products"
         ref={infoRef}
         className={`py-7 md:py-10 scroll-animate-stagger ${
           isInfoVisible ? "animate-in" : ""
@@ -112,10 +111,10 @@ function InfoBlock({ className = "", id, title, info }) {
           </div>
 
           {currentInfo && (
-            <div className="grid md:grid-cols-2 gap-4 items-start overflow-hidden">
+            <div className="grid md:grid-cols-[40%_60%] gap-14 md:gap-18 items-start overflow-hidden">
               <div
                 key={activeTab.id}
-                className="flex flex-col gap-4 tab-content-animate"
+                className="flex flex-col gap-4 tab-content-animate p-2"
               >
                 <img src={activeTab.icon} className="w-15 h-15" />
                 <h3 className="tab-title">{t(activeTab.label)}</h3>
@@ -139,7 +138,9 @@ function InfoBlock({ className = "", id, title, info }) {
                   </a>
                 </button>
               </div>
-              <VideoBlock info={info} className="mt-10" />
+              <div>
+                <img src={info.image} className="md:w-full md:h-full md:max-w-[550px] max-w-[300px] rounded-[10px]" />
+              </div>
             </div>
           )}
         </div>

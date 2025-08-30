@@ -11,9 +11,7 @@ function Header({ className = "" }) {
   const languageMenuRef = useRef(null);
 
   const menuItems = [
-    { href: "#page", key: t("QR-страница") },
-    { href: "#menu", key: t("QR-меню и каталоги") },
-    { href: "#nfc", key: t("NFC-визитки") },
+    { href: "#products", key: t("Продукты") },
     { href: "#features", key: t("Преимущества") },
     { href: "#tariffs", key: t("Тарифы") },
     { href: "#contacts", key: t("Контакты") },
@@ -55,7 +53,7 @@ function Header({ className = "" }) {
       <a
         key={item.key}
         href={item.href}
-        className={`text-[#9F9BA5] hover:text-white transition-colors ${className}`}
+        className={`text-[#9F9BA5] transition-colors ${className}`}
       >
         {item.key}
       </a>
@@ -66,7 +64,7 @@ function Header({ className = "" }) {
     <>
       <div
         ref={headerRef}
-        className={`flex justify-between items-center bg-[#0D0D0D] border border-[#332B40] rounded-[10px] fixed top-4 left-1/2 -translate-x-1/2 z-10 scroll-animate px-4 py-4 max-w-[1200px] w-[calc(100%-32px)] ${
+        className={`header flex justify-between items-center bg-[#0D0D0D] border border-[#332B40] rounded-[10px] fixed top-4 left-1/2 -translate-x-1/2 z-10 scroll-animate px-4 py-4 max-w-[1200px] w-[calc(100%-32px)] ${
           isHeaderVisible ? "animate-in" : ""
         } ${className}`}
       >
@@ -77,13 +75,20 @@ function Header({ className = "" }) {
         <div className="hidden lg:flex gap-4">{renderMenuItems()}</div>
 
         <div
-          className={`absolute top-full left-0 right-0 mt-2 bg-[#0D0D0D] border border-[#332B40] rounded-[10px] p-4 lg:hidden transition-all duration-300 ease-in-out transform ${
+          className={`absolute top-full left-0 right-0 mt-2 bg-[#9560EB] rounded-[10px] px-5 py-14 lg:hidden transition-all duration-300 ease-in-out transform ${
             isMobileMenuOpen
               ? "opacity-100 translate-y-0"
               : "opacity-0 -translate-y-2 pointer-events-none"
           }`}
         >
-          <div className="flex flex-col gap-3">{renderMenuItems("py-2")}</div>
+          <button className="w-[40px] h-[40px] bg-[url('/img/close.svg')] bg-center bg-no-repeat" style={{ position: "absolute", top: "10px", right: "10px" }} onClick={toggleMobileMenu} />
+          <div className="flex flex-col gap-3">
+            {renderMenuItems("font-bold text-white text-2xl")}
+            <div className="mt-8">
+              {t("Обратная связь:")}
+              <p className="text-xl font-bold text-white">info@one-click.app</p> 
+            </div>
+          </div>
         </div>
 
         <div className="flex gap-4 items-center">

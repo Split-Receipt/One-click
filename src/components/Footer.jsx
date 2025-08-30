@@ -26,9 +26,7 @@ function Footer({ className = "" }) {
   ];
 
   const siteMap = [
-    { href: "#page", text: t("QR-страница") },
-    { href: "#menu", text: t("QR-меню и каталоги") },
-    { href: "#nfc", text: t("NFC-визитки") },
+    { href: "#products", text: t("Продукты") },
     { href: "#features", text: t("Преимущества") },
     { href: "#tariffs", text: t("Тарифы") },
     { href: "#contacts", text: t("Контакты") },
@@ -36,17 +34,17 @@ function Footer({ className = "" }) {
 
   const paymentMethods = [
     [
-      { src: "img/paypal.png", className: "payment-icon w-20 sm:w-30" },
-      { src: "img/visa.png", className: "payment-icon w-18 sm:w-25" },
+      { src: "img/paypal.png", className: "payment-icon w-20 sm:w-25" },
+      { src: "img/visa.png", className: "payment-icon w-18 sm:w-20" },
     ],
     [
-      { src: "img/mastercard.png", className: "payment-icon w-18 sm:w-25" },
-      { src: "img/maestro.png", className: "payment-icon w-18 sm:w-25" },
+      { src: "img/mastercard.png", className: "payment-icon w-18 sm:w-20" },
+      { src: "img/maestro.png", className: "payment-icon w-18 sm:w-20" },
     ],
     [
-      { src: "img/amexp.png", className: "payment-icon w-12 sm:w-14" },
-      { src: "img/yape.png", className: "payment-icon w-12 sm:w-15" },
-      { src: "img/plin.png", className: "payment-icon w-12 sm:w-15" },
+      { src: "img/amexp.png", className: "payment-icon w-12 sm:w-13" },
+      { src: "img/yape.png", className: "payment-icon w-12 sm:w-13" },
+      { src: "img/plin.png", className: "payment-icon w-12 sm:w-13" },
     ],
   ];
 
@@ -68,7 +66,8 @@ function Footer({ className = "" }) {
                   <a
                     key={index}
                     href={link.href}
-                    className={`bg-[url("${link.img}")] bg-cover bg-center w-10 h-10 block`}
+                    className="bg-cover bg-center w-10 h-10 block"
+                    style={{ backgroundImage: `url(${link.img})` }}
                   />
                 ))}
               </div>
