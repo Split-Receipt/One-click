@@ -23,6 +23,9 @@ importers:
       react-i18next:
         specifier: ^15.6.1
         version: 15.6.1(i18next@25.3.6)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      reactjs-popup:
+        specifier: ^2.0.6
+        version: 2.0.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       swiper:
         specifier: ^11.2.10
         version: 11.2.10
@@ -1076,6 +1079,13 @@ packages:
     resolution: {integrity: sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ==}
     engines: {node: '>=0.10.0'}
 
+  reactjs-popup@2.0.6:
+    resolution: {integrity: sha512-A+tt+x9wdgZiZjv0e2WzYLD3IfFwJALaRaqwrCSXGjo0iQdsry/EtBEbQXRSmQs7cHmOi5eytCiSlOm8k4C+dg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+
   resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -2082,6 +2092,11 @@ snapshots:
   react-refresh@0.17.0: {}
 
   react@19.1.1: {}
+
+  reactjs-popup@2.0.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+    dependencies:
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
 
   resolve-from@4.0.0: {}
 
