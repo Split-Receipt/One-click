@@ -7,44 +7,9 @@ import Overview from "./Overview.jsx";
 import InfoBlock from "./InfoBlock.jsx";
 import Features from "./Features.jsx";
 import Tariffs from "./Tariffs.jsx";
-import Popup from "reactjs-popup";
 
 function App() {
   const { t } = useTranslation();
-
-  const QRPopup = () => (
-    <Popup
-      trigger={<button>Show Popup (dev only)</button>}
-      position="center center"
-      modal
-      closeOnDocumentClick
-      closeOnEscape
-      closeOnOutsideClick
-      overlayStyle={{
-        background: "rgba(0, 0, 0, 0.7)",
-        animation: "fadeIn 0.3s ease-out",
-      }}
-      contentStyle={{
-        animation: "slideIn 0.3s ease-out",
-      }}
-    >
-      {(close) => (
-        <div className="lg:max-w-[700px] md:max-w-[500px] max-w-[350px] w-full min-h-[310px] md:min-h-[320px] lg:min-h-[340px] bg-[#0D0D0D] bg-[url('/img/popup-bg.webp')] bg-cover bg-center rounded-[10px]">
-          <div className="bg-[url('/img/gear.webp')] bg-contain bg-right bg-no-repeat flex flex-col justify-between md:px-[40px] px-[20px] py-[40px] lg:max-w-[700px] md:max-w-[500px] max-w-[350px] w-full min-h-[310px] md:min-h-[320px] lg:min-h-[340px]">
-            <button
-              className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] bg-[url('/img/close.svg')] bg-center bg-no-repeat"
-              style={{ position: "absolute", top: "10px", right: "10px" }}
-              onClick={close}
-            />
-            <h1 className="!leading-none">{t("Создай динамический QR")}</h1>
-            <button className="w-[105px]">
-              <a href="https://one-click.app/register">{t("Создать")}</a>
-            </button>
-          </div>
-        </div>
-      )}
-    </Popup>
-  );
 
   const info = [
     {
@@ -331,7 +296,6 @@ function App() {
 
   return (
     <>
-      <QRPopup />
       <Header />
       <Screen />
       <Overview />
