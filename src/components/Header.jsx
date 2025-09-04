@@ -118,7 +118,7 @@ function Header({ className = "" }) {
             </a>
 
             {isLanguageMenuOpen && (
-              <div className="absolute left-[-20px] mt-2 w-32 bg-[#0D0D0D] border border-[#332B40] rounded-[10px] shadow-lg z-20">
+              <div className="absolute left-[-20px] mt-2 w-15 bg-[#0D0D0D] border border-[#332B40] rounded-[10px] shadow-lg z-20">
                 {languages.map((lang) => (
                   <a
                     key={lang.code}
