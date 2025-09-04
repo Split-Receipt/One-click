@@ -60,6 +60,7 @@ function Header({ className = "" }) {
         key={item.key}
         href={item.href}
         className={`text-[#9F9BA5] transition-colors ${className}`}
+        onClick={() => setIsMobileMenuOpen(false)}
       >
         {item.key}
       </a>
