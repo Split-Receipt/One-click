@@ -8,7 +8,9 @@ function Header({ className = "" }) {
   const [headerRef, isHeaderVisible] = useScrollAnimation(0.1, "-50px");
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState("ES");
+  const [currentLanguage, setCurrentLanguage] = useState(() => {
+    return localStorage.getItem("selectedLanguage")?.toUpperCase() || "ES";
+  });
   const languageMenuRef = useRef(null);
 
   const menuItems = [
@@ -48,6 +50,7 @@ function Header({ className = "" }) {
     setCurrentLanguage(language);
     setIsLanguageMenuOpen(false);
     i18n.changeLanguage(language.toLowerCase());
+    localStorage.setItem("selectedLanguage", language.toLowerCase());
   };
 
   const toggleMobileMenu = () => {
@@ -104,7 +107,7 @@ function Header({ className = "" }) {
 
         <div className="flex gap-4 items-center">
           <a href="https://one-click.app/register" className="text-[#9F9BA5]">
-            {t('header.login')}
+            {t("header.login")}
           </a>
           <div className="relative" ref={languageMenuRef}>
             <a

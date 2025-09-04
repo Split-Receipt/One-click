@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
 
 function InfoBlock({ className = "", title, info }) {
@@ -8,17 +8,24 @@ function InfoBlock({ className = "", title, info }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  const tabs = [
-    {
-      id: "possibilities",
-      label: t('infoBlock.possibilities'),
-      icon: "img/possibilities.png",
-    },
-    { id: "features", label: t('menu.features'), icon: "img/features.png" },
-    { id: "for", label: t('infoBlock.for'), icon: "img/for.png" },
-  ];
+  const tabs = useMemo(
+    () => [
+      {
+        id: "possibilities",
+        label: t("infoBlock.possibilities"),
+        icon: "img/possibilities.png",
+      },
+      { id: "features", label: t("menu.features"), icon: "img/features.png" },
+      { id: "for", label: t("infoBlock.for"), icon: "img/for.png" },
+    ],
+    [t]
+  );
 
-  const [activeTab, setActiveTab] = useState(tabs[0]);
+  const [activeTab, setActiveTab] = useState(() => tabs[0]);
+
+  useEffect(() => {
+    setActiveTab(tabs.find((tab) => tab.id === activeTab.id) || tabs[0]);
+  }, [t, tabs, activeTab.id]);
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabs.find((tab) => tab.id === tabId));
@@ -134,12 +141,15 @@ function InfoBlock({ className = "", title, info }) {
                 </div>
                 <button className="w-1/2 mt-6">
                   <a href="https://one-click.app/register">
-                    {t('common.register')}
+                    {t("common.register")}
                   </a>
                 </button>
               </div>
               <div>
-                <img src={info.image} className="md:w-full md:h-full md:max-w-[550px] max-w-[300px] rounded-[10px]" />
+                <img
+                  src={info.image}
+                  className="md:w-full md:h-full md:max-w-[550px] max-w-[300px] rounded-[10px]"
+                />
               </div>
             </div>
           )}
