@@ -11,11 +11,11 @@ function InfoBlock({ className = "", title, info }) {
   const tabs = [
     {
       id: "possibilities",
-      label: t("Возможности"),
+      label: t('infoBlock.possibilities'),
       icon: "img/possibilities.png",
     },
-    { id: "features", label: t("Преимущества"), icon: "img/features.png" },
-    { id: "for", label: t("Для кого"), icon: "img/for.png" },
+    { id: "features", label: t('menu.features'), icon: "img/features.png" },
+    { id: "for", label: t('infoBlock.for'), icon: "img/for.png" },
   ];
 
   const [activeTab, setActiveTab] = useState(tabs[0]);
@@ -78,7 +78,7 @@ function InfoBlock({ className = "", title, info }) {
               }`}
             >
               <div className="flex items-center justify-between">
-                <span className="flex-1 text-center">{t(activeTab.label)}</span>
+                <span className="flex-1 text-center">{activeTab.label}</span>
                 <img
                   src="img/arrow.svg"
                   className={`w-6 h-6 transition-transform duration-600 ${
@@ -117,8 +117,8 @@ function InfoBlock({ className = "", title, info }) {
                 className="flex flex-col gap-4 tab-content-animate p-2"
               >
                 <img src={activeTab.icon} className="w-15 h-15" />
-                <h3 className="tab-title">{t(activeTab.label)}</h3>
-                <h4 className="tab-subtitle">{t(currentInfo.title)}</h4>
+                <h3 className="tab-title">{activeTab.label}</h3>
+                <h4 className="tab-subtitle">{currentInfo.title}</h4>
                 <div className="tab-text">
                   {Array.isArray(currentInfo.text)
                     ? currentInfo.text.map((textItem, index) => (
@@ -127,14 +127,14 @@ function InfoBlock({ className = "", title, info }) {
                           className="flex items-center gap-2 mb-2"
                         >
                           <img src="img/check.svg" className="w-4 h-4" />
-                          <span>{t(textItem)}</span>
+                          <span>{textItem}</span>
                         </div>
                       ))
-                    : t(currentInfo.text)}
+                    : currentInfo.text}
                 </div>
                 <button className="w-1/2 mt-6">
                   <a href="https://one-click.app/register">
-                    {t("Регистрация")}
+                    {t('common.register')}
                   </a>
                 </button>
               </div>

@@ -8,18 +8,14 @@ function Features({ className = "" }) {
   const featuresData = [
     {
       image: "img/copy.png",
-      title: t("Все нужные ссылки и\u00A0сведения"),
-      description: t(
-        "Вся информация – в одно касание. Рассказывайте и показывайте, делитесь контактами, работами в портфолио, видео и многим другим. Принимайте оплату картой, на электронный кошелек или криптокошелек."
-      ),
+      title: t('features.allLinks.title'),
+      description: t('features.allLinks.description'),
       area: "area-a",
     },
     {
       image: "img/custom.png",
-      title: t("Полная кастомизация"),
-      description: t(
-        "Компонуйте информацию так, как удобно вам! Используйте уже готовые шаблоны или создавайте свой дизайн при помощи удобного визуального конструктора."
-      ),
+      title: t('features.fullCustomization.title'),
+      description: t('features.fullCustomization.description'),
       area: "area-b",
     },
     {
@@ -32,45 +28,37 @@ function Features({ className = "" }) {
       children: (
         <div className="bg-[url('/img/pattern.png')] bg-cover bg-top h-full w-full text-left">
           <h3 className="mb-2 relative z-10">
-            {t("Стильно. Удобно. Эффективно.")}
+            {t('features.efficiency.title')}
           </h3>
-          <h4 className="mb-5 relative z-10">{t("Выбери свое решение")}</h4>
+          <h4 className="mb-5 relative z-10">{t('features.efficiency.description')}</h4>
           <button>
-            <a href="https://one-click.app/register">{t("Подключиться")}</a>
+            <a href="https://one-click.app/register">{t('common.connect')}</a>
           </button>
         </div>
       ),
     },
     {
       image: "img/settings.png",
-      title: t("Вечный код"),
-      description: t(
-        "Ваша web страница и QR-код будут работать всегда. Меняйте содержимое сколько угодно – код обновлять не потребуется."
-      ),
+      title: t('features.code.title'),
+      description: t('features.code.description'),
       area: "area-e",
     },
     {
       image: "img/redo.png",
-      title: t("Быстрота и удобство"),
-      description: t(
-        "Облачные технологии обеспечивают быструю и стабильную загрузку созданных страниц с любого устройства, без установки сторонних приложений."
-      ),
+      title: t('features.speed.title'),
+      description: t('features.speed.description'),
       area: "area-f",
     },
     {
       image: "img/time.png",
-      title: t("Экономия времени и\u00A0средств"),
-      description: t(
-        "Экономьте на печати обычных визиток и веб-разработке. Создавайте свои страницы и каталоги за считанные минуты и принимайте заказы."
-      ),
+      title: t('features.time.title'),
+      description: t('features.time.description'),
       area: "area-g",
     },
     {
       image: "img/picture.png",
-      title: t("Современное трендовое\u00A0решение"),
-      description: t(
-        "Уникальный NFC-аксессуар с вашим дизайном: брелок, браслет, пластиковая карта и многое другое. Компактный QR-код для стикеров и табличек."
-      ),
+      title: t('features.modern.title'),
+      description: t('features.modern.description'),
       area: "area-h",
     },
   ];
@@ -85,7 +73,7 @@ function Features({ className = "" }) {
         }`}
       >
         <div className="container">
-          <h2 className="text-center mb-8">{t("Преимущества")}</h2>
+          <h2 className="text-center mb-8">{t('menu.features')}</h2>
           <div className="features-grid">
             {featuresData.map((feature, index) => (
               <div

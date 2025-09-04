@@ -13,281 +13,214 @@ function App() {
 
   const info = [
     {
-      title: t("QR-страница"),
+      title: t('products.qrPage'),
       possibilities: {
-        title: t("Расскажите о том, что интересно"),
-        text: t(
-          `QR-страница – мини-презентация объекта. QR-код можно легко разместить на информационной табличке или наклейке. Отсканировав его, пользователь сможет получить дополнительную информацию о товаре или экспонате: фото, описание, видео, историю, интересные факты, контакты производителя, и многое другое.`
-        ),
+        title: t('products.qrPage.possibilities.title'),
+        text: t('products.qrPage.possibilities.description.1'),
       },
       features: {
         text: [
-          t("Мультиязычность"),
-          t("Быстрое создание"),
-          t("Свободная компоновка данных"),
-          t("Компактный QR-код для размещения"),
-          t("Современность и удобство"),
+          t('products.qrPage.features.1'),
+          t('products.qrPage.features.2'),
+          t('products.qrPage.features.3'),
+          t('products.qrPage.features.4'),
+          t('products.qrPage.features.5'),
         ],
       },
       for: {
         text: [
-          t("Туристические объекты"),
-          t("Производители товаров"),
-          t("Музеи"),
-          t("Выставки"),
+          t('products.qrPage.for.1'),
+          t('products.qrPage.for.2'),
+          t('products.qrPage.for.3'),
+          t('products.qrPage.for.4'),
         ],
       },
       image: "/img/qr-page-f.webp",
     },
     {
-      title: t("QR-меню или каталог"),
+      title: t('products.qrMenu'),
       possibilities: {
-        title: t("Продавайте больше и быстрее"),
-        text: t(
-          `Удобный каталог товаров или меню с возможностью моментального оформления заказа. QR-код можно разместить на столике, кассе, витрине. Каталог позволяет не только просмотреть информацию о товарах, но и оформить заказ онлайн. При этом пользователь получает все нужные данные, не тратя время сотрудников.`
-        ),
+        title: t('products.qrMenu.possibilities.title'),
+        text: t('products.qrMenu.possibilities.description.1'),
       },
       features: {
         text: [
-          t("Мгновенный заказ"),
-          t("Цены и наглядная корзинка"),
-          t("Фотографии"),
-          t("Описание на нескольких языках"),
-          t("Вся информация о продукции в одно касание"),
-          t("Размещение кода на видных местах"),
+          t('products.qrMenu.features.1'),
+          t('products.qrMenu.features.2'),
+          t('products.qrMenu.features.3'),
+          t('products.qrMenu.features.4'),
+          t('products.qrMenu.features.5'),
+          t('products.qrMenu.features.6'),
         ],
       },
       for: {
         text: [
-          t("Кафе"),
-          t("Рестораны"),
-          t("Сувенирные киоски"),
-          t("Интернет-магазины"),
+          t('products.qrMenu.for.1'),
+          t('products.qrMenu.for.2'),
+          t('products.qrMenu.for.3'),
+          t('products.qrMenu.for.4'),
         ],
       },
       image: "/img/qr-menu-f.webp",
     },
     {
-      title: t("QR/NFC-визитка"),
+      title: t('products.nfcCard'),
       possibilities: {
-        title: t("Делитесь всем необходимым"),
-        text: t(
-          `Универсальный цифровой инструмент для бизнеса и личного бренда. Страничка-презентация позволяет собрать в одном месте все нужные ссылки и сведения: контакты, портфолио, прайс, схему проезда и многое другое. А дополнительный NFC-аксессуар, который можно привязать к страничке, дает возможность в одно касание отправить потенциальному клиенту всю необходимую информацию.`
-        ),
+        title: t('products.nfcCard.possibilities.title'),
+        text: t('products.nfcCard.possibilities.description.1'),
       },
       features: {
         text: [
-          t("Статусность и современность"),
-          t("Вся информация собрана воедино"),
-          t("Больше никаких дорогих печатных визиток"),
-          t("Мгновенная передача всей информации"),
-          t("Удобное решение для специалистов и клиентов"),
+          t('products.nfcCard.features.1'),
+          t('products.nfcCard.features.2'),
+          t('products.nfcCard.features.3'),
+          t('products.nfcCard.features.4'),
+          t('products.nfcCard.features.5'),
+          t('products.nfcCard.features.6'),
         ],
       },
       for: {
         text: [
-          t("Представители компаний"),
-          t("Блогеры и медийные персоны"),
-          t("Специалисты"),
-          t("Творческие личности"),
+          t('products.nfcCard.for.1'),
+          t('products.nfcCard.for.2'),
+          t('products.nfcCard.for.3'),
+          t('products.nfcCard.for.4'),
         ],
       },
       image: "/img/nfc-card-f.webp",
     },
     {
-      title: t("QR-Файл"),
+      title: t('products.qrFile'),
       possibilities: {
         text: [
-          t(
-            "Хранение и доступ к различным типам документов (меню, каталоги, инструкции и т.д.)"
-          ),
-          t("Мгновенный доступ к информации через сканирование QR-кода."),
-          t("Возможность обновления информации в реальном времени."),
-          t("Интерактивность: включение ссылок на анкеты, опросы или видео."),
-          t(
-            "Настройка QR-Файлов в соответствии с визуальной идентичностью бренда."
-          ),
+          t('products.qrFile.possibilities.description.1'),
+          t('products.qrFile.possibilities.description.2'),
+          t('products.qrFile.possibilities.description.3'),
+          t('products.qrFile.possibilities.description.4'),
+          t('products.qrFile.possibilities.description.5'),
         ],
       },
       features: {
         text: [
-          t("Устранение необходимости в печатных материалах снижает расходы."),
-          t(
-            "Экономия времени, быстрые обновления и доступ к информации без задержек."
-          ),
-          t(
-            "Улучшение взаимодействия с клиентами, более богатый и интерактивный опыт."
-          ),
-          t(
-            "Удобство, легкий доступ к информации в любом месте и в любое время."
-          ),
+          t('products.qrFile.features.1'),
+          t('products.qrFile.features.2'),
+          t('products.qrFile.features.3'),
+          t('products.qrFile.features.4'),
         ],
       },
       for: {
         text: [
-          t(
-            "Бизнесы: рестораны, магазины, компании, предоставляющие услуги и т.д."
-          ),
-          t(
-            "Образовательные учреждения: школы и университеты для распространения учебного материала."
-          ),
-          t(
-            "Организации: неправительственные и государственные организации для распространения информации."
-          ),
-          t(
-            "Маркетологи: компании, стремящиеся улучшить свои рекламные кампании и взаимодействие с клиентами."
-          ),
+          t('products.qrFile.for.1'),
+          t('products.qrFile.for.2'),
+          t('products.qrFile.for.3'),
+          t('products.qrFile.for.4'),
         ],
       },
       image: "/img/qr-file-f.webp",
     },
     {
-      title: t("Приглашения, открытки"),
+      title: t('products.digitalInvitation'),
       possibilities: {
         text: [
-          t(
-            "Персонализированное приглашение: дизайн, фото, текст и геолокация для создания уникального приглашения."
-          ),
-          t(
-            "Подтверждение участия: возможность добавить опцию для (подтверждение участия)."
-          ),
-          t(
-            "Таймер обратного отсчёта: визуальный элемент для создания ожидания перед событием."
-          ),
-          t(
-            "Мультимедийные элементы: включение фото и видео для более привлекательного контента."
-          ),
-          t(
-            "Кнопки перехода: ссылки на WhatsApp или социальные сети для удобной связи."
-          ),
-          t(
-            "Доступность: работа по ссылке и через QR-код, обеспечивая легкий доступ к приглашению."
-          ),
-        ],
+          t('products.digitalInvitation.features.1'),
+          t('products.digitalInvitation.features.2'),
+          t('products.digitalInvitation.features.3'),
+          t('products.digitalInvitation.features.4'),
+          t('products.digitalInvitation.features.5'),
+          t('products.digitalInvitation.features.6'),
+        ]
       },
       features: {
         text: [
-          t(
-            "Уникальность: персонализированный подход делает приглашение запоминающимся."
-          ),
-          t(
-            "Удобство: гости всегда имеют доступ к приглашению на своих устройствах."
-          ),
-          t(
-            "Повышение вовлеченности: интерактивные элементы, такие как таймер и мультимедиа, увеличивают интерес."
-          ),
-          t("Простота обмена: легкий доступ к общению через кнопки перехода."),
+          t('products.digitalInvitation.features.1'),
+          t('products.digitalInvitation.features.2'),
+          t('products.digitalInvitation.features.3'),
+          t('products.digitalInvitation.features.4'),
         ],
       },
       for: {
         text: [
-          t(
-            "Организаторы событий: для свадеб, дней рождения, корпоративов и других мероприятий."
-          ),
-          t(
-            "Маркетологи: компании, желающие продвигать свои мероприятия и акции."
-          ),
-          t(
-            "Социальные группы: клубы и сообщества, организующие мероприятия для своих членов."
-          ),
-          t(
-            "Образовательные учреждения: школы и университеты для организации встреч и мероприятий."
-          ),
-          t(
-            "Физические лица: люди, организующие семейные мероприятия (дни рождения, baby shower и другие)."
-          ),
+          t('products.digitalInvitation.for.1'),
+          t('products.digitalInvitation.for.2'),
+          t('products.digitalInvitation.for.3'),
+          t('products.digitalInvitation.for.4'),
+          t('products.digitalInvitation.for.5'),
         ],
       },
       image: "/img/invitation-f.webp",
     },
     {
-      title: t("Портфолио"),
+      title: t('products.portfolio'),
       possibilities: {
-        text: t(
-          `Онлайн-портфолио позволяет в современном мультимедийном формате представить свои работы и услуги, добавляя фото, видео, аудио и документы, структурировать проекты в галереи и каталоги, публиковать кейсы и отзывы клиентов, использовать контактные кнопки и формы заявок, встраивать карты, прайс-листы, бронирование и ссылки на соцсети, персонализировать оформление под фирменный стиль, обеспечивать адаптивное отображение на любых устройствах, делиться доступом через QR-код и легко обновлять или интегрировать материалы в сайт, соцсети и рассылки.`
-        ),
+        text: t('products.portfolio.possibilities.description.1'),
       },
       features: {
         text: [
-          t("Современный способ представления себя и своего бизнеса."),
-          t(
-            "Возможность встроить фото, видео, слайды и интерактивные элементы."
-          ),
-          t("Размещение отзывов клиентов для повышения доверия."),
-          t("Контактные кнопки и формы заявок для быстрой связи."),
-          t(
-            "Удобный доступ: портфолио всегда под рукой в телефоне или компьютере."
-          ),
-          t("Возможность обновлять и дополнять материалы в любое время."),
+          t('products.portfolio.features.1'),
+          t('products.portfolio.features.2'),
+          t('products.portfolio.features.3'),
+          t('products.portfolio.features.4'),
+          t('products.portfolio.features.5'),
+          t('products.portfolio.features.6'),
         ],
       },
       for: {
         text: [
-          t("Фотографы и видеографы"),
-          t("Дизайнеры (графические, интерьерные, веб)"),
-          t("Архитекторы"),
-          t("Маркетологи и SMM-специалисты"),
-          t(
-            "Юристы, врачи, коучи и другие специалисты, работающие с клиентами"
-          ),
+          t('products.portfolio.for.1'),
+          t('products.portfolio.for.2'),
+          t('products.portfolio.for.3'),
+          t('products.portfolio.for.4'),
+          t('products.portfolio.for.5'),
         ],
       },
       image: "/img/portfolio-f.webp",
     },
     {
-      title: t("Лендинг"),
+      title: t('products.landing'),
       possibilities: {
-        text: t(
-          `Лендинг позволяет разместить чёткое предложение с выгодами для аудитории, встроить фото, видео, анимации и презентации, показать отзывы и кейсы, добавить формы захвата лидов и кнопки быстрого контакта, использовать таймеры акций, интеграцию с платёжными системами и CRM, а также обеспечить адаптивное отображение на любых устройствах с возможностью лёгкого обновления и масштабирования под новые продукты.`
-        ),
+        text: t('products.landing.possibilities.description.1'),
       },
       features: {
         text: [
-          t(
-            "Максимально концентрирует внимание на одном продукте или действии."
-          ),
-          t("Увеличивает конверсию из посетителей в клиентов."),
-          t("Легко интегрируется с рекламой и аналитикой."),
-          t("Быстро создаётся и легко тестируется под разные аудитории."),
-          t(
-            "Работает как самостоятельный сайт или часть маркетинговой воронки."
-          ),
+          t('products.landing.features.1'),
+          t('products.landing.features.2'),
+          t('products.landing.features.3'),
+          t('products.landing.features.4'),
+          t('products.landing.features.5'),
         ],
       },
       for: {
         text: [
-          t("Бизнесы, запускающие рекламу или акции"),
-          t("Организаторы мероприятий и вебинаров"),
-          t("Онлайн-школы и образовательные проекты"),
-          t("Продажа отдельных товаров или услуг"),
-          t("Стартапы и компании, тестирующие новые предложения"),
+          t('products.landing.for.1'),
+          t('products.landing.for.2'),
+          t('products.landing.for.3'),
+          t('products.landing.for.4'),
+          t('products.landing.for.5'),
         ],
       },
       image: "/img/landing-f.webp",
     },
     {
-      title: t("Корпоративная презентация"),
+      title: t('products.corporatePresentation'),
       possibilities: {
-        text: t(
-          `Корпоративная презентация позволяет объединить информацию о компании в удобный цифровой формат с фото, видео, графиками и инфографикой, стильно представить бренд и его ценности, наглядно показать продукты, тарифы и команду, встроить формы обратной связи и кнопки для контакта, адаптивно отображать материалы на любых устройствах, легко обновлять их и делиться доступом по ссылке вместо устаревших PDF.`
-        ),
+        text: t('products.corporatePresentation.possibilities.description.1'),
       },
       features: {
         text: [
-          t("Современная альтернатива статичным PDF."),
-          t("Удобство демонстрации на встречах и онлайн."),
-          t("Повышает доверие и имидж компании."),
-          t("Экономит время и ресурсы при обновлениях."),
-          t("Легко распространяется через ссылку или QR-код."),
+          t('products.corporatePresentation.features.1'),
+          t('products.corporatePresentation.features.2'),
+          t('products.corporatePresentation.features.3'),
+          t('products.corporatePresentation.features.4'),
+          t('products.corporatePresentation.features.5'),
         ],
       },
       for: {
         text: [
-          t("Компании малого и среднего бизнеса"),
-          t("Крупные корпорации"),
-          t("Стартапы, выходящие на рынок"),
-          t("HR-отделы (для презентации работодателя)"),
-          t("Отделы продаж и маркетинга"),
+          t('products.corporatePresentation.for.1'),
+          t('products.corporatePresentation.for.2'),
+          t('products.corporatePresentation.for.3'),
+          t('products.corporatePresentation.for.4'),
+          t('products.corporatePresentation.for.5'),
         ],
       },
       image: "/img/presentation-f.webp",

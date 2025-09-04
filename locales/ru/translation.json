@@ -1,0 +1,335 @@
+{
+  "action": {
+    "button": "",
+    "title": ""
+  },
+  "common": {
+    "connect": "",
+    "free": {
+      "title": ""
+    },
+    "register": ""
+  },
+  "features": {
+    "allLinks": {
+      "description": "",
+      "title": ""
+    },
+    "code": {
+      "description": "",
+      "title": ""
+    },
+    "efficiency": {
+      "description": "",
+      "title": ""
+    },
+    "fullCustomization": {
+      "description": "",
+      "title": ""
+    },
+    "modern": {
+      "description": "",
+      "title": ""
+    },
+    "speed": {
+      "description": "",
+      "title": ""
+    },
+    "time": {
+      "description": "",
+      "title": ""
+    }
+  },
+  "footer": {
+    "copyright": "",
+    "description": "",
+    "info": "",
+    "partner": "",
+    "payment": "",
+    "privacy": "",
+    "questions": "",
+    "siteMap": "",
+    "terms": ""
+  },
+  "header": {
+    "feedback": "",
+    "login": ""
+  },
+  "infoBlock": {
+    "for": "",
+    "possibilities": ""
+  },
+  "menu": {
+    "contacts": "",
+    "features": "",
+    "products": "",
+    "tariffs": ""
+  },
+  "products": {
+    "corporatePresentation": {
+      "description": "",
+      "features": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "for": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "possibilities": {
+        "description": {
+          "1": ""
+        }
+      },
+      "title": ""
+    },
+    "digitalInvitation": {
+      "description": {
+        "1": "",
+        "2": ""
+      },
+      "features": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      "for": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "title": ""
+    },
+    "dynamicQr": {
+      "description": {
+        "1": "",
+        "2": ""
+      },
+      "title": ""
+    },
+    "landing": {
+      "description": "",
+      "features": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "for": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "possibilities": {
+        "description": {
+          "1": ""
+        }
+      },
+      "title": ""
+    },
+    "nfcCard": {
+      "description": {
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      "features": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      "for": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      "possibilities": {
+        "description": {
+          "1": ""
+        },
+        "title": ""
+      },
+      "title": ""
+    },
+    "portfolio": {
+      "description": "",
+      "features": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      "for": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "possibilities": {
+        "description": {
+          "1": ""
+        }
+      },
+      "title": ""
+    },
+    "qrFile": {
+      "description": "",
+      "features": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      "for": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      "possibilities": {
+        "description": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+          "5": ""
+        }
+      },
+      "title": ""
+    },
+    "qrMenu": {
+      "description": {
+        "1": "",
+        "2": ""
+      },
+      "features": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      },
+      "for": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      "possibilities": {
+        "description": {
+          "1": ""
+        },
+        "title": ""
+      },
+      "title": ""
+    },
+    "qrPage": {
+      "features": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "for": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      "possibilities": {
+        "description": {
+          "1": ""
+        },
+        "title": ""
+      }
+    }
+  },
+  "screen": {
+    "subtitle": "",
+    "title": ""
+  },
+  "tariffs": {
+    "company": {
+      "description": "",
+      "title": ""
+    },
+    "features": {
+      "backgroundImage": "",
+      "button": "",
+      "catalog": "",
+      "categories": "",
+      "externalLinks": {
+        "2": "",
+        "more": ""
+      },
+      "faq": "",
+      "files": "",
+      "image": {
+        "1": "",
+        "more": ""
+      },
+      "location": "",
+      "logo": "",
+      "logoCarousel": "",
+      "logoDesktop": "",
+      "menu": "",
+      "nfc": "",
+      "popup": "",
+      "qrCode": "",
+      "qrPage": {
+        "1": "",
+        "2": "",
+        "5": ""
+      },
+      "slides": "",
+      "social": {
+        "4": "",
+        "more": ""
+      },
+      "text": {
+        "2": "",
+        "ai": "",
+        "more": ""
+      },
+      "video": "",
+      "videoWidget": ""
+    },
+    "free": {
+      "description": ""
+    },
+    "month": "",
+    "oneTime": "",
+    "professional": {
+      "description": "",
+      "title": ""
+    },
+    "standard": {
+      "description": "",
+      "title": ""
+    },
+    "year": ""
+  }
+}

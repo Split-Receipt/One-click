@@ -17,11 +17,11 @@ function Action({ className = "" }) {
           <div className="container flex flex-col gap-10 items-center justify-between sm:gap-15 md:gap-20 sm:flex-row">
             <div className="flex flex-col gap-10 w-full sm:w-1/2 items-center">
               <h2 className="text-center">
-                {t("Создай свою промо-страницу за пять минут!")}
+                {t('action.title')}
               </h2>
               <button className="w-full sm:max-w-[350px]">
                 <a href="https://one-click.app/register">
-                  {t("Подключиться бесплатно навсегда")}
+                  {t('action.button')}
                 </a>
               </button>
             </div>

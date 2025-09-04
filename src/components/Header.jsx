@@ -1,26 +1,26 @@
 import { useTranslation } from "react-i18next";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
 import { useState, useRef, useEffect } from "react";
+import i18n from "../../i18n.js";
 
 function Header({ className = "" }) {
   const { t } = useTranslation();
   const [headerRef, isHeaderVisible] = useScrollAnimation(0.1, "-50px");
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState("RU");
+  const [currentLanguage, setCurrentLanguage] = useState("ES");
   const languageMenuRef = useRef(null);
 
   const menuItems = [
-    { href: "#products", key: t("Продукты") },
-    { href: "#features", key: t("Преимущества") },
-    { href: "#tariffs", key: t("Тарифы") },
-    { href: "#contacts", key: t("Контакты") },
+    { href: "#products", key: t("menu.products") },
+    { href: "#features", key: t("menu.features") },
+    { href: "#tariffs", key: t("menu.tariffs") },
+    { href: "#contacts", key: t("menu.contacts") },
   ];
 
   const languages = [
-    { code: "EN", name: t("English") },
-    { code: "ES", name: t("Español") },
-    { code: "RU", name: t("Русский") },
+    { code: "ES", name: "Español" },
+    { code: "RU", name: "Русский" },
   ];
 
   useEffect(() => {
@@ -39,9 +39,15 @@ function Header({ className = "" }) {
     };
   }, []);
 
+  useEffect(() => {
+    const currentI18nLang = i18n.language.toUpperCase();
+    setCurrentLanguage(currentI18nLang);
+  }, []);
+
   const handleLanguageChange = (language) => {
     setCurrentLanguage(language);
     setIsLanguageMenuOpen(false);
+    i18n.changeLanguage(language.toLowerCase());
   };
 
   const toggleMobileMenu = () => {
@@ -81,19 +87,23 @@ function Header({ className = "" }) {
               : "opacity-0 -translate-y-2 pointer-events-none"
           }`}
         >
-          <button className="w-[40px] h-[40px] bg-[url('/img/close.svg')] bg-center bg-no-repeat" style={{ position: "absolute", top: "10px", right: "10px" }} onClick={toggleMobileMenu} />
+          <button
+            className="w-[40px] h-[40px] bg-[url('/img/close.svg')] bg-center bg-no-repeat"
+            style={{ position: "absolute", top: "10px", right: "10px" }}
+            onClick={toggleMobileMenu}
+          />
           <div className="flex flex-col gap-3">
             {renderMenuItems("font-bold text-white text-2xl")}
             <div className="mt-8">
-              {t("Обратная связь:")}
-              <p className="text-xl font-bold text-white">info@one-click.app</p> 
+              {t('header.feedback')}:
+              <p className="text-xl font-bold text-white">info@one-click.app</p>
             </div>
           </div>
         </div>
 
         <div className="flex gap-4 items-center">
           <a href="https://one-click.app/register" className="text-[#9F9BA5]">
-            {t("Войти")}
+            {t('header.login')}
           </a>
           <div className="relative" ref={languageMenuRef}>
             <a

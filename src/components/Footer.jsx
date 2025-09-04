@@ -13,23 +13,23 @@ function Footer({ className = "" }) {
   ];
 
   const legalLinks = [
-    { href: "#", text: t("Политика конфиденциальности") },
-    { href: "#", text: t("Договор-оферта") },
-    { href: "#", text: t("Партнерская программа") },
-    { href: "#", text: t("Вопросы-ответы") },
+    { href: "#", text: t('footer.privacy') },
+    { href: "#", text: t('footer.terms') },
+    { href: "#", text: t('footer.partner') },
+    { href: "#", text: t('footer.questions') },
   ];
 
   const companyInfo = [
-    { text: t("Creator RA Studio SAC") },
-    { text: t("RUC 20606559578") },
-    { text: t("Jr. Policarpo Caballero, Cusco") },
+    { text: 'Creator RA Studio SAC' },
+    { text: 'RUC 20606559578' },
+    { text: 'Jr. Policarpo Caballero, Cusco' },
   ];
 
   const siteMap = [
-    { href: "#products", text: t("Продукты") },
-    { href: "#features", text: t("Преимущества") },
-    { href: "#tariffs", text: t("Тарифы") },
-    { href: "#contacts", text: t("Контакты") },
+    { href: "#products", text: t('menu.products') },
+    { href: "#features", text: t('menu.features') },
+    { href: "#tariffs", text: t('menu.tariffs') },
+    { href: "#contacts", text: t('menu.contacts') },
   ];
 
   const paymentMethods = [
@@ -78,7 +78,7 @@ function Footer({ className = "" }) {
               ))}
             </div>
             <div className="flex flex-col gap-2">
-              <h4>{t("Информация")}</h4>
+              <h4>{t('footer.info')}</h4>
               {companyInfo.map((info, index) => (
                 <p key={index}>{info.text}</p>
               ))}
@@ -88,7 +88,7 @@ function Footer({ className = "" }) {
               </a>
             </div>
             <div className="flex flex-col gap-2">
-              <h4>{t("Карта сайта")}</h4>
+              <h4>{t('footer.siteMap')}</h4>
               {siteMap.map((link, index) => (
                 <a key={index} href={link.href}>
                   {link.text}
@@ -96,7 +96,7 @@ function Footer({ className = "" }) {
               ))}
             </div>
             <div className="flex flex-col gap-3">
-              <h4>{t("Методы оплаты")}</h4>
+              <h4>{t('footer.payment')}</h4>
               {paymentMethods.map((row, rowIndex) => (
                 <div
                   key={rowIndex}
@@ -116,11 +116,9 @@ function Footer({ className = "" }) {
             </div>
           </div>
           <div className="text-xs flex flex-col gap-2 sm:flex-row sm:gap-5">
-            <div>{t("2025. Todos los derechos reservados")}</div>
+            <div>{t('footer.copyright')}</div>
             <div>
-              {t(
-                "Paginas QR, catalogos, menu y tarjetas de presentacion NFC para la vida y los negocios"
-              )}
+              {t('footer.description')}
             </div>
           </div>
         </div>

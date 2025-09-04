@@ -11,118 +11,116 @@ function Tariffs({ className = "" }) {
 
   const tariffsData = [
     {
-      name: t("Бесплатный"),
-      description: t("Визитная карточка"),
+      name: t('common.free.title'),
+      description: t('tariffs.free.description'),
       price: [],
       features: [
-        t("1 страница с QR"),
-        t("1 изображение"),
-        t("2 блока текста"),
-        t("4 ссылки на социальные сети"),
-        t("2 внешние ссылки"),
-        t("Контакты"),
-        t("Логотип ONE CLICK"),
+        t('tariffs.features.qrPage.1'),
+        t('tariffs.features.image.1'),
+        t('tariffs.features.text.2'),
+        t('tariffs.features.social.4'),
+        t('tariffs.features.externalLinks.2'),
+        t('menu.contacts'),
+        t('tariffs.features.logo'),
       ],
-      buttonText: t("Подключиться"),
+      buttonText: t('common.connect'),
       buttonLink: "https://one-click.app/register",
       isSpecial: false,
     },
     {
-      name: t("Стандарт"),
-      description: t("Визитная карточка, Приглашение, QR-файл"),
+      name: t('tariffs.standard.title'),
+      description: t('tariffs.standard.description'),
       price: [
         {
-          period: t("единоразово"),
+          period: t('tariffs.oneTime'),
           value: 30,
         },
       ],
       features: [
-        t("1 страница с QR"),
-        t("1 изображение"),
-        t("2 блока текста"),
-        t("4 ссылки на социальные сети"),
-        t("2 внешние ссылки"),
-        t("Контакты"),
-        t("Собственное фоновое изображение"),
-        t("Собственный логотип для рабочего стола"),
-        t("Иконка для QR-кода"),
-        t("Загрузка файлов PDF, Word, Excel"),
+        t('tariffs.features.qrPage.1'),
+        t('tariffs.features.image.1'),
+        t('tariffs.features.text.2'),
+        t('tariffs.features.social.4'),
+        t('tariffs.features.externalLinks.2'),
+        t('menu.contacts'),
+        t('tariffs.features.backgroundImage'),
+        t('tariffs.features.logoDesktop'),
+        t('tariffs.features.qrCode'),
+        t('tariffs.features.files'),
       ],
-      buttonText: t("Подключиться"),
+      buttonText: t('common.connect'),
       buttonLink: "https://one-click.app/register",
       isSpecial: true,
     },
     {
-      name: t("Профессионал"),
-      description: t(
-        "Корпоративная презентация, Профессиональная карточка, Портфолио"
-      ),
+      name: t('tariffs.professional.title'),
+      description: t('tariffs.professional.description'),
       price: [
         {
-          period: t("единоразово"),
+          period: t('tariffs.oneTime'),
           value: 130,
         },
       ],
       features: [
-        t("2 страницы с QR"),
-        t("Изображения"),
-        t("Блоки текста"),
-        t("Ссылки на социальные сети"),
-        t("Внешние ссылки"),
-        t("Контакты"),
-        t("Собственное фоновое изображение"),
-        t("Собственный логотип для рабочего стола"),
-        t("Иконка для QR-кода"),
-        t("Загрузка файлов PDF, Word, Excel"),
-        t("Слайды"),
-        t("Категории"),
-        t("Видео YouTube, Vimeo"),
-        t("Местоположение, Карта"),
-        t("FAQ"),
-        t("Логотип-карусель"),
-        t("NFC-карта"),
+        t('tariffs.features.qrPage.2'),
+        t('tariffs.features.image.more'),
+        t('tariffs.features.text.more'),
+        t('tariffs.features.social.more'),
+        t('tariffs.features.externalLinks.more'),
+        t('menu.contacts'),
+        t('tariffs.features.backgroundImage'),
+        t('tariffs.features.logoDesktop'),
+        t('tariffs.features.qrCode'),
+        t('tariffs.features.files'),
+        t('tariffs.features.slides'),
+        t('tariffs.features.categories'),
+        t('tariffs.features.video'),
+        t('tariffs.features.location'),
+        t('tariffs.features.faq'),
+        t('tariffs.features.logoCarousel'),
+        t('tariffs.features.nfc'),
       ],
-      buttonText: t("Подключиться"),
+      buttonText: t('common.connect'),
       buttonLink: "https://one-click.app/register",
       isSpecial: false,
     },
     {
-      name: t("Компания"),
-      description: t("Цифровое меню, Каталог, Лендинг"),
+      name: t('tariffs.company.title'),
+      description: t('tariffs.company.description'),
       price: [
         {
-          period: t("месяц"),
+          period: t('tariffs.month'),
           value: 35,
         },
         {
-          period: t("год"),
+          period: t('tariffs.year'),
           value: 300,
         },
       ],
       features: [
-        t("5 страниц с QR"),
-        t("Изображения"),
-        t("Блоки текста с ИИ-переводчиком"),
-        t("Ссылки на социальные сети"),
-        t("Внешние ссылки"),
-        t("Контакты"),
-        t("Собственное фоновое изображение"),
-        t("Собственный логотип для рабочего стола"),
-        t("Иконка для QR-кода"),
-        t("Загрузка файлов PDF, Word, Excel"),
-        t("Слайды"),
-        t("Категории"),
-        t("Видео YouTube, Vimeo"),
-        t("Местоположение, Карта"),
-        t("FAQ"),
-        t("Логотип-карусель"),
-        t("Цифровой каталог с ИИ-переводчиком"),
-        t("Цифровое меню с ИИ-переводчиком"),
-        t("1 анимированная кнопка-ссылка"),
-        t("1 всплывающий баннер (POP-UP)"),
-        t("Видеовиджеты презентация, отзывы, карусель"),
+        t('tariffs.features.qrPage.5'),
+        t('tariffs.features.image.more'),
+        t('tariffs.features.text.ai'),
+        t('tariffs.features.social.more'),
+        t('tariffs.features.externalLinks.more'),
+        t('menu.contacts'),
+        t('tariffs.features.backgroundImage'),
+        t('tariffs.features.logoDesktop'),
+        t('tariffs.features.qrCode'),
+        t('tariffs.features.files'),
+        t('tariffs.features.slides'),
+        t('tariffs.features.categories'),
+        t('tariffs.features.video'),
+        t('tariffs.features.location'),
+        t('tariffs.features.faq'),
+        t('tariffs.features.logoCarousel'),
+        t('tariffs.features.catalog'),
+        t('tariffs.features.menu'),
+        t('tariffs.features.button'),
+        t('tariffs.features.popup'),
+        t('tariffs.features.videoWidget'),
       ],
-      buttonText: t("Подключиться"),
+      buttonText: t('common.connect'),
       buttonLink: "https://one-click.app/register",
       isSpecial: false,
     },
@@ -138,7 +136,7 @@ function Tariffs({ className = "" }) {
         }`}
       >
         <div className="container text-center relative">
-          <h2>{t("Тарифы")}</h2>
+          <h2>{t('menu.tariffs')}</h2>
           <Swiper
             ref={swiperRef}
             spaceBetween={10}
@@ -187,10 +185,10 @@ function Tariffs({ className = "" }) {
                   <p>{tariff.description}</p>
                   <h4 className="leading-tight">
                     {!tariff.price.length
-                      ? t("Бесплатно")
+                      ? t('common.free')
                       : tariff.price.map((price, priceIndex) => (
                         <p key={priceIndex}>
-                          S / {price.value.toFixed(2)} / {price.period}
+                          S / {price.value.toFixed(2)} / {price.period.toLowerCase()}
                         </p>
                       ))
                       }

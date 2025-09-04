@@ -312,7 +312,7 @@ button:hover {
   height: 100%;
   background-image: url("/img/phones.png");
   background-size: contain;
-  background-position: bottom;
+  background-position: right;
   background-repeat: no-repeat;
   z-index: 0;
 }

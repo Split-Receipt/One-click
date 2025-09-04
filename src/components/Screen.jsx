@@ -23,15 +23,14 @@ function Screen({ className = "" }) {
                 transform: "translateY(0px)",
               }}
             />
-            <h1 className="text-center">
-              {t("One\u00A0click\u00A0—\u00A0твой")} <br /> {t("персональный инструмент")}{" "}
-              <br /> {t("контактов и\u00A0продаж")}
+            <h1 className="text-center" style={{ whiteSpace: 'pre-line' }}>
+              {t('screen.title')}
             </h1>
             <p className="text-center md:text-2xl text-lg md:w-1/2 w-full">
-              {t("Подключись сейчас и получи вечный бесплатный доступ!")}
+              {t('screen.subtitle')}
             </p>
             <button className="bg-[#9560EB]">
-              <a href="https://one-click.app/register">{t("Подключиться")}</a>
+              <a href="https://one-click.app/register">{t('common.connect')}</a>
             </button>
             <img
               src="img/message.svg"
