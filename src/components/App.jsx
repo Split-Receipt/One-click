@@ -13,7 +13,7 @@ function App() {
 
   const info = [
     {
-      title: t('products.qrPage'),
+      title: t('products.qrPage.title'),
       possibilities: {
         title: t('products.qrPage.possibilities.title'),
         text: t('products.qrPage.possibilities.description.1'),
@@ -38,7 +38,7 @@ function App() {
       image: "/img/qr-page-f.webp",
     },
     {
-      title: t('products.qrMenu'),
+      title: t('products.qrMenu.title'),
       possibilities: {
         title: t('products.qrMenu.possibilities.title'),
         text: t('products.qrMenu.possibilities.description.1'),
@@ -64,7 +64,7 @@ function App() {
       image: "/img/qr-menu-f.webp",
     },
     {
-      title: t('products.nfcCard'),
+      title: t('products.nfcCard.title'),
       possibilities: {
         title: t('products.nfcCard.possibilities.title'),
         text: t('products.nfcCard.possibilities.description.1'),
@@ -90,7 +90,7 @@ function App() {
       image: "/img/nfc-card-f.webp",
     },
     {
-      title: t('products.qrFile'),
+      title: t('products.qrFile.title'),
       possibilities: {
         text: [
           t('products.qrFile.possibilities.description.1'),
@@ -119,7 +119,7 @@ function App() {
       image: "/img/qr-file-f.webp",
     },
     {
-      title: t('products.digitalInvitation'),
+      title: t('products.digitalInvitation.title'),
       possibilities: {
         text: [
           t('products.digitalInvitation.features.1'),
@@ -150,7 +150,7 @@ function App() {
       image: "/img/invitation-f.webp",
     },
     {
-      title: t('products.portfolio'),
+      title: t('products.portfolio.title'),
       possibilities: {
         text: t('products.portfolio.possibilities.description.1'),
       },
@@ -176,7 +176,7 @@ function App() {
       image: "/img/portfolio-f.webp",
     },
     {
-      title: t('products.landing'),
+      title: t('products.landing.title'),
       possibilities: {
         text: t('products.landing.possibilities.description.1'),
       },
@@ -201,7 +201,7 @@ function App() {
       image: "/img/landing-f.webp",
     },
     {
-      title: t('products.corporatePresentation'),
+      title: t('products.corporatePresentation.title'),
       possibilities: {
         text: t('products.corporatePresentation.possibilities.description.1'),
       },
