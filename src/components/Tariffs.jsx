@@ -11,7 +11,7 @@ function Tariffs({ className = "" }) {
 
   const tariffsData = [
     {
-      name: t('common.free.title'),
+      name: t('tariffs.free.title'),
       description: t('tariffs.free.description'),
       price: [],
       features: [
@@ -185,7 +185,7 @@ function Tariffs({ className = "" }) {
                   <p>{tariff.description}</p>
                   <h4 className="leading-tight">
                     {!tariff.price.length
-                      ? t('common.free')
+                      ? t('common.free.title')
                       : tariff.price.map((price, priceIndex) => (
                         <p key={priceIndex}>
                           S / {price.value.toFixed(2)} / {price.period.toLowerCase()}

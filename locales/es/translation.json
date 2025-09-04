@@ -1,336 +1,342 @@
 {
   "action": {
-    "button": "",
-    "title": ""
+    "button": "Conéctate gratis para siempre",
+    "title": "¡Crea tu página promo\n en 5 minutos!"
   },
   "common": {
-    "connect": "",
+    "connect": "Conectarse",
     "free": {
-      "title": ""
+      "title": "Gratis"
     },
-    "register": ""
+    "register": "Registrarse"
   },
   "features": {
     "allLinks": {
-      "description": "",
-      "title": ""
+      "description": "Toda tu información a un toque de distancia. Cuente y muestre, comparta contactos, trabajos en cartera, vídeos y mucho más. Acepta pagos con tarjeta, monedero electrónico.",
+      "title": "Todos los enlaces y la información que necesitas"
     },
     "code": {
-      "description": "",
-      "title": ""
+      "description": "Tu página web y tu código QR funcionarán siempre. Cambia el contenido tanto como quieras, sin necesidad de actualizar el código.",
+      "title": "Código sin vencimiento"
     },
     "efficiency": {
-      "description": "",
-      "title": ""
+      "description": "Elige tu solución",
+      "title": "Con estilo. Cómodo. Eficaz."
     },
     "fullCustomization": {
-      "description": "",
-      "title": ""
+      "description": "Componga su información como desee Utilice plantillas ya preparadas o cree su propio diseño con la ayuda de un cómodo constructor visual.",
+      "title": "Diseño Personalizado"
     },
     "modern": {
-      "description": "",
-      "title": ""
+      "description": "Accesorio NFC único con su diseño: llavero, pulsera, tarjeta de plástico y mucho más. Código QR compacto para pegatinas y carteles.",
+      "title": "Una solución moderna y actual"
     },
     "speed": {
-      "description": "",
-      "title": ""
+      "description": "Las tecnologías en la nube proporcionan una carga rápida y estable de las páginas creadas desde cualquier dispositivo, sin necesidad de instalar aplicaciones de terceros.",
+      "title": "Rápido y cómodo"
     },
     "time": {
-      "description": "",
-      "title": ""
+      "description": "Ahorre en la impresión habitual de tarjetas de presentación y en el desarrollo de páginas web. Cree sus páginas y catálogos en minutos y acepte pedidos.",
+      "title": "Ahorro de tiempo y recursos"
     }
   },
   "footer": {
-    "copyright": "",
-    "description": "",
-    "info": "",
-    "partner": "",
-    "payment": "",
-    "privacy": "",
-    "questions": "",
-    "siteMap": "",
-    "terms": ""
+    "copyright": "2025. Todos los derechos reservados",
+    "description": "Paginas QR, catalogos, menu y tarjetas de presentacion NFC para la vida y los negocios",
+    "info": "Información",
+    "partner": "Programa de afiliados",
+    "payment": "Metodos de pago",
+    "privacy": "Política de privacidad",
+    "questions": "Preguntas frecuentes",
+    "siteMap": "Mapa del sitio",
+    "terms": "Términos y condiciones"
   },
   "header": {
-    "feedback": "",
-    "login": ""
+    "feedback": "Déjanos su comentario",
+    "login": "Ingresar"
   },
   "infoBlock": {
-    "for": "",
-    "possibilities": ""
+    "for": "Para quién",
+    "possibilities": "Posibilidades"
   },
   "menu": {
-    "contacts": "",
-    "features": "",
-    "products": "",
-    "tariffs": ""
+    "contacts": "Contactos",
+    "features": "Ventajas",
+    "products": "Productos",
+    "tariffs": "Precios y Tarifas"
   },
   "products": {
     "corporatePresentation": {
-      "description": "",
+      "description": "Documento interactivo para empresas donde se muestra la historia, valores, productos, precios, equipo y contactos. Alternativa digital al PDF, fácil de actualizar y compartir por enlace o QR.",
       "features": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": ""
+        "1": "Alternativa moderna al PDF",
+        "2": "Cómodo en reuniones y online",
+        "3": "Refuerza imagen de marca",
+        "4": "Ahorra tiempo y recursos en las actualizaciones",
+        "5": "Fácil de actualizar y difundir"
       },
       "for": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": ""
+        "1": "PYMEs",
+        "2": "Grandes corporaciones",
+        "3": "Startups",
+        "4": "Recursos Humanos",
+        "5": "Ventas y Marketing"
       },
       "possibilities": {
         "description": {
-          "1": ""
+          "1": "Reunir información de la empresa en formato digital, Integrar fotos, videos, gráficos, infografías, Mostrar productos, tarifas y equipo, Formularios de contacto integrados, Visualización en cualquier dispositivo"
         }
       },
-      "title": ""
+      "title": "Presentación Corporativa"
     },
     "digitalInvitation": {
       "description": {
-        "1": "",
+        "1": "Invitación personalizada con diseño, fotos, texto y geolocalización. Puede incluir confirmación de asistencia, cuenta regresiva, multimedia y enlaces a WhatsApp o/y redes sociales. Disponible mediante enlace o QR.",
         "2": ""
       },
       "features": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": "",
-        "6": ""
+        "1": "Diseño personalizado para cada evento.",
+        "2": "Los invitados tienen facial acceso a la invitación en su dispositivo",
+        "3": "Información siempre actualizada",
+        "4": "Enlaces de WhatsApp o las redes sociales para facilitar la comunicación"
+      },
+      "possibilities": {
+        "1": "Invitación Personalizado: Diseño, foto, texto y localización para la creación de la invitación.",
+        "2": "Posibilidad de añadir la opción de confirmación de la participación.",
+        "3": "Posibilidad de añadir un temporizador de cuenta atrás del evento.",
+        "4": "Elementos multimedia: la Inclusión de fotos y vídeos.",
+        "5": "Enlaces de WhatsApp o las redes sociales para facilitar la comunicación.",
+        "6": "Fácil de compartir con un enlace y a través de un código QR."
       },
       "for": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": ""
+        "1": "Organizadores de eventos (bodas, cumpleaños, empresas)",
+        "2": "Marketing (promoción de eventos)",
+        "3": "Grupos sociales",
+        "4": "Educación (reuniones, actos)",
+        "5": "Personas (fiestas familiares, baby shower, etc.)"
       },
-      "title": ""
+      "title": "Invitación – Postal"
     },
     "dynamicQr": {
       "description": {
-        "1": "",
-        "2": ""
+        "1": "Se crea con el objetivo de atraer y convertir las visitas a la pagina en una acción específica (por ejemplo, compra, suscripción, llenar un formulario). La QR Dinámico se enfoca en la promoción de un producto, servicio o evento concreto. Un enlace a tu presentación de un producto o servicio entre otros.",
+        "2": "¡Usa nuestro generador de QR en modo “REDIRECT” gratis y por tiempo indefinido! Con este QR, el enlace se conecta directamente con tu sitio web, imagen o archivo, y compartirlo es rápido y cómodo. ¡Registrarte ahora y aprovecha nuestras ventajas!"
       },
-      "title": ""
+      "title": "QR- Dinamico"
     },
     "landing": {
-      "description": "",
+      "description": "Página web de una sola sección enfocada en conversión: publicidad, promociones, registro a eventos o venta.",
       "features": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": ""
+        "1": "Foco en una sola acción",
+        "2": "Convierte más visitantes en clientes",
+        "3": "Fácil integración con campañas",
+        "4": "Rápida creación y prueba",
+        "5": "Funciona como un sitio web independiente o como parte de un embudo de marketing"
       },
       "for": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": ""
+        "1": "Negocios en campañas o promociones",
+        "2": "Organizadores de eventos/webinars",
+        "3": "Escuelas online y proyectos educativos",
+        "4": "Venta de productos/servicios específicos",
+        "5": "Startups"
       },
       "possibilities": {
         "description": {
-          "1": ""
+          "1": "El landing page permite presentar una oferta clara con beneficios para la audiencia, insertar fotos, videos, animaciones y presentaciones, mostrar testimonios y casos, agregar formularios de captación de leads y botones de contacto rápido, utilizar temporizadores de promociones, integrar sistemas de pago y CRM, así como garantizar una visualización adaptable en cualquier dispositivo con la posibilidad de actualizar fácilmente y escalar para nuevos productos."
         }
       },
-      "title": ""
+      "title": "Landing Page"
     },
     "nfcCard": {
       "description": {
-        "1": "",
-        "2": "",
+        "1": "Tarjeta personalizada para compartir información de empresa, producto, servicio o persona. Incluye multi-enlace, textos imagines, videos, logotios entre otras cosas.",
+        "2": "En nuestra plataforma puedes crear tarjetas digitales personalizadas. Usa plantillas gratis o crea una propia. ¡Registrarte y disfruta de los beneficios!",
         "3": ""
       },
       "features": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": "",
-        "6": ""
+        "1": "Moderna y con estatus",
+        "2": "Toda la información reunida",
+        "3": "Adiós a tarjetas impresas caras",
+        "4": "Transmisión instantánea de información",
+        "5": "Cómodo para profesionales y clientes"
       },
       "for": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": ""
+        "1": "Empresas y representantes",
+        "2": "Influencers",
+        "3": "Especialistas y profesionales",
+        "4": "Creativos"
       },
       "possibilities": {
         "description": {
-          "1": ""
+          "1": "Comparte toda tu información en un solo lugar: contactos, portafolio, precios, ubicación, etc."
         },
-        "title": ""
+        "title": "Compatible con accesorios NFC para enviar todo con un solo toque."
       },
-      "title": ""
+      "title": "QR/NFC-Tarjeta de Presentacion"
     },
     "portfolio": {
-      "description": "",
+      "description": "Una forma moderna de presentar sus trabajos o servicios. Ideal para fotógrafos, diseñadores, arquitectos, abogados, médicos, marketers, etc.",
       "features": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": "",
-        "6": ""
+        "1": "Forma moderna de presentar tu negocio",
+        "2": "Elementos multimedia e interactivos",
+        "3": "Reseñas para generar confianza",
+        "4": "Acceso en todo momento",
+        "5": "Actualizaciones fáciles",
+        "6": "Posibilidad de insertar fotos, videos, diapositivas y elementos interactivos"
       },
       "for": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": ""
+        "1": "Fotógrafos",
+        "2": "Diseñadores",
+        "3": "Arquitectos",
+        "4": "Marketers y SMM",
+        "5": "Abogados, médicos, coachers"
       },
       "possibilities": {
         "description": {
-          "1": ""
+          "1": "Un portafolio en línea permite presentar trabajos y servicios en un formato multimedia moderno, añadiendo fotos, videos, audios y documentos, estructurar proyectos en galerías y catálogos, publicar casos y testimonios de clientes, utilizar botones de contacto y formularios de solicitud, incrustar mapas, listas de precios, reservas y enlaces a redes sociales, personalizar el diseño según la identidad de la marca, garantizar visualización adaptable en cualquier dispositivo, compartir acceso mediante códigos QR y actualizar o integrar fácilmente los contenidos en el sitio web, redes sociales y newsletters."
         }
       },
-      "title": ""
+      "title": "Portafolio"
     },
     "qrFile": {
-      "description": "",
+      "description": "Archivo digital disponible por un QR único. Al escanearlo, el cliente accede directamente a documentos, menús, catálogos, manuales u otros materiales. Ahorra en impresiones y permite actualizaciones en tiempo real.",
       "features": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": ""
+        "1": "Elimina material impreso y reduce gastos",
+        "2": "Actualizaciones rápidas",
+        "3": "Mejor experiencia para clientes",
+        "4": "Acceso en cualquier lugar"
       },
       "for": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": ""
+        "1": "Negocios (restaurantes, tiendas, servicios)",
+        "2": "Educación (colegios, universidades)",
+        "3": "ONG y entidades públicas",
+        "4": "Marketing y publicidad"
       },
       "possibilities": {
         "description": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-          "5": ""
+          "1": "Guardar y acceder a documentos",
+          "2": "Acceso inmediato vía QR",
+          "3": "Actualizaciones en tiempo real",
+          "4": "Interactivo: encuestas, formularios, vídeos",
+          "5": "Personalización con identidad visual"
         }
       },
-      "title": ""
+      "title": "QR-Archivo"
     },
     "qrMenu": {
       "description": {
-        "1": "",
-        "2": ""
+        "1": "Menú digital: solución moderna para restaurantes, bufete, y cafés. Permite a los clientes ver platos con fotos, precios actualizados, descripción de ingredientes, elegir idioma y hacer pedidos al instante. Además, los clientes pueden dejar reseñas, ayudando a otros en su elección y aumentando la confianza en el negocio.",
+        "2": "Catálogo digital: herramienta eficaz para presentar productos y servicios. Incluye fotos, características, promociones y permite actualizaciones inmediatas. Disponible vía QR, multilenguaje y accesible en cualquier lugar del mundo."
       },
       "features": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": "",
-        "6": ""
+        "1": "Pedido inmediato",
+        "2": "Descripción en formato digital e interactivo",
+        "3": "Ilustracións",
+        "4": "Multilenguaje",
+        "5": "Todo en un solo toque",
+        "6": "Código QR en lugares u objetos de preferencia"
       },
       "for": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": ""
+        "1": "Cafés",
+        "2": "Restaurantes",
+        "3": "Tiendas de artesanía y otras",
+        "4": "E-commerce"
       },
       "possibilities": {
         "description": {
-          "1": ""
+          "1": "Catálogo o menú con pedidos inmediatos, eligir Interfaz en el idioma de preferencia QR en mesas, cajas o vitrinas, información + pedido online sin gastar tiempo de los empleados"
         },
-        "title": ""
+        "title": "Vender más y más rápido"
       },
-      "title": ""
+      "title": "QR-Menú o Catálogo"
     },
     "qrPage": {
       "features": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": ""
+        "1": "Plurilingüe",
+        "2": "Creación rápida",
+        "3": "Libre composición de datos",
+        "4": "QR compacto para cualquier superficie",
+        "5": "Moderno y cómodo"
       },
       "for": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": ""
+        "1": "Sector de turismo",
+        "2": "Productoras y Fabricantes",
+        "3": "Museos",
+        "4": "Exposiciones"
       },
       "possibilities": {
         "description": {
-          "1": ""
+          "1": "QR Dinámico: informacion siempre actualizada. El QR se puede colocar en placas informativas o adhesivos. Al escanearlo, el usuario accede a más información: fotos, descripciones, vídeos, historia, curiosidades, contactos del fabricante, etc."
         },
-        "title": ""
+        "title": "Resalta lo que importa"
       },
-      "title": ""
+      "title": "QR-Página"
     }
   },
   "screen": {
-    "subtitle": "",
-    "title": ""
+    "subtitle": "¡Registrarte ahora y desfruta del acceso ilimitado!",
+    "title": "One Click - tu herramienta \n personal para las \nrelaciones y negocios"
   },
   "tariffs": {
     "company": {
-      "description": "",
-      "title": ""
+      "description": "Menu digital, Catalogo, Landing",
+      "title": "Empresarial"
     },
     "features": {
-      "backgroundImage": "",
-      "button": "",
-      "catalog": "",
-      "categories": "",
+      "backgroundImage": "Imagen de fondo propia",
+      "button": "1 Botton Enlace Animado",
+      "catalog": "Catalogo digital con IA traductor",
+      "categories": "Categorias",
       "externalLinks": {
-        "2": "",
-        "more": ""
+        "2": "2 Enlaces externos",
+        "more": "Enlaces externos"
       },
-      "faq": "",
-      "files": "",
+      "faq": "FAQ",
+      "files": "Carga de archivos PDF, Word, Excel",
       "image": {
-        "1": "",
-        "more": ""
+        "1": "1 Imagen",
+        "more": "Imagenes"
       },
-      "location": "",
-      "logo": "",
-      "logoCarousel": "",
-      "logoDesktop": "",
-      "menu": "",
-      "nfc": "",
-      "popup": "",
-      "qrCode": "",
+      "location": "Ubicación / Mapa",
+      "logo": "Logotipo de ONE CLICK",
+      "logoCarousel": "Logo Carrusel",
+      "logoDesktop": "Logotipo propio para el escritorio",
+      "menu": "Menu digital con IA traductor",
+      "nfc": "Tarjeta NFC",
+      "popup": "1 Banner POP UP",
+      "qrCode": "Icono para cédigo QR",
       "qrPage": {
-        "1": "",
-        "2": "",
-        "5": ""
+        "1": "1 pagina con QR",
+        "2": "2 pagina con QR",
+        "5": "5 pagina con QR"
       },
-      "slides": "",
+      "slides": "Diapositivas",
       "social": {
-        "4": "",
-        "more": ""
+        "4": "4 Enlaces a redes sociales",
+        "more": "Enlaces a redes sociales"
       },
       "text": {
-        "2": "",
-        "ai": "",
-        "more": ""
+        "2": "2 blockes de texto",
+        "ai": "Blockes de texto",
+        "more": "Blockes de texto"
       },
-      "video": "",
-      "videoWidget": ""
+      "video": "Video YouTube / Vimeo",
+      "videoWidget": "Video Widget presentación, testimonios, carrusel"
     },
     "free": {
-      "description": ""
+      "description": "Tarjeta de presentación",
+      "title": "Free"
     },
-    "month": "",
-    "oneTime": "",
+    "month": "mes",
+    "oneTime": "puntual",
     "professional": {
-      "description": "",
-      "title": ""
+      "description": "Tarjeta profesional, Portafolio, Presentacion Corporativa",
+      "title": "Pro"
     },
     "standard": {
-      "description": "",
-      "title": ""
+      "description": "QR-Archivo, Invitacion, Tarjeta profesional",
+      "title": "Standard"
     },
-    "year": ""
+    "year": "año"
   }
 }

@@ -49,7 +49,7 @@ function InfoBlock({ className = "", title, info }) {
       <div
         id="products"
         ref={infoRef}
-        className={`py-7 md:py-10 scroll-animate-stagger ${
+        className={`py-10 md:py-15 scroll-animate-stagger ${
           isInfoVisible ? "animate-in" : ""
         } ${className}`}
       >

@@ -76,7 +76,6 @@ function App() {
           t('products.nfcCard.features.3'),
           t('products.nfcCard.features.4'),
           t('products.nfcCard.features.5'),
-          t('products.nfcCard.features.6'),
         ],
       },
       for: {
@@ -122,12 +121,12 @@ function App() {
       title: t('products.digitalInvitation.title'),
       possibilities: {
         text: [
-          t('products.digitalInvitation.features.1'),
-          t('products.digitalInvitation.features.2'),
-          t('products.digitalInvitation.features.3'),
-          t('products.digitalInvitation.features.4'),
-          t('products.digitalInvitation.features.5'),
-          t('products.digitalInvitation.features.6'),
+          t('products.digitalInvitation.possibilities.1'),
+          t('products.digitalInvitation.possibilities.2'),
+          t('products.digitalInvitation.possibilities.3'),
+          t('products.digitalInvitation.possibilities.4'),
+          t('products.digitalInvitation.possibilities.5'),
+          t('products.digitalInvitation.possibilities.6'),
         ]
       },
       features: {
