@@ -62,6 +62,7 @@ function App() {
         ],
       },
       image: "/img/qr-menu-f.webp",
+      videos: ["/video/qrmenu.webm","/video/qrcatalog.webm"],
     },
     {
       title: t('products.nfcCard.title'),
@@ -87,6 +88,7 @@ function App() {
         ],
       },
       image: "/img/nfc-card-f.webp",
+      videos: ["/video/nfc-card.webm", "/video/nfc-card2.webm"],
     },
     {
       title: t('products.qrFile.title'),
@@ -147,6 +149,7 @@ function App() {
         ],
       },
       image: "/img/invitation-f.webp",
+      videos: ["/video/invitation.webm"],
     },
     {
       title: t('products.portfolio.title'),

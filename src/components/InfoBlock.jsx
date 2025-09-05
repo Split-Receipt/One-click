@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect, useMemo } from "react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
+import VideoBlock from "./VideoBlock.jsx";
 
 function InfoBlock({ className = "", title, info }) {
   const { t } = useTranslation();
@@ -146,10 +147,14 @@ function InfoBlock({ className = "", title, info }) {
                 </button>
               </div>
               <div>
-                <img
-                  src={info.image}
-                  className="md:w-full md:h-full md:max-w-[550px] max-w-[300px] rounded-[10px]"
-                />
+                {!info.videos?.length ? (
+                  <img
+                    src={info.image}
+                    className="md:w-full md:h-full md:max-w-[550px] max-w-[300px] rounded-[10px]"
+                  />
+                ) : (
+                  <VideoBlock info={info} className="md:mt-10" />
+                )}
               </div>
             </div>
           )}
