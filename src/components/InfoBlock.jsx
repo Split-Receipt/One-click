@@ -93,6 +93,7 @@ function InfoBlock({ className = "", title, info }) {
                     isDropdownOpen ? "rotate-180" : ""
                   }`}
                   alt="arrow"
+                  loading="lazy"
                 />
               </div>
             </button>
@@ -124,7 +125,12 @@ function InfoBlock({ className = "", title, info }) {
                 key={activeTab.id}
                 className="flex flex-col gap-4 tab-content-animate p-2"
               >
-                <img src={activeTab.icon} className="w-15 h-15" />
+                <img
+                  src={activeTab.icon}
+                  className="w-15 h-15"
+                  loading="lazy"
+                  alt={activeTab.label}
+                />
                 <h3 className="tab-title">{activeTab.label}</h3>
                 <h4 className="tab-subtitle">{currentInfo.title}</h4>
                 <div className="tab-text">
@@ -134,7 +140,12 @@ function InfoBlock({ className = "", title, info }) {
                           key={index}
                           className="flex items-center gap-2 mb-2"
                         >
-                          <img src="img/check.svg" className="w-4 h-4" />
+                          <img
+                            src="img/check.svg"
+                            className="w-4 h-4"
+                            loading="lazy"
+                            alt="check"
+                          />
                           <span>{textItem}</span>
                         </div>
                       ))
@@ -151,6 +162,8 @@ function InfoBlock({ className = "", title, info }) {
                   <img
                     src={info.image}
                     className="md:w-full md:h-full md:max-w-[550px] max-w-[300px] rounded-[10px]"
+                    loading="lazy"
+                    alt={info.title}
                   />
                 ) : (
                   <VideoBlock info={info} className="md:mt-10" />

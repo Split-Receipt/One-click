@@ -46,12 +46,14 @@ function Features({ className = "" }) {
       children: (
         <>
           <video
-            src="/video/featurevideo.webm"
+            src="/video/featvideo.webm"
             ref={videoRef}
             className="absolute top-0 left-0 w-full h-full object-cover"
             loop
             playsInline
             muted
+            loading="lazy"
+            preload="metadata"
             onPlay={handlePlay}
             onClick={handleVideoClick}
           />
@@ -60,7 +62,12 @@ function Features({ className = "" }) {
               className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-20 h-20 !bg-black flex items-center justify-center !rounded-full !border-2 !border-white"
               onClick={handlePlay}
             >
-              <img src="/img/play.svg" className="w-10 h-10" />
+              <img
+                src="/img/play.svg"
+                className="w-10 h-10"
+                loading="lazy"
+                alt="Play"
+              />
             </button>
           )}
         </>
@@ -70,7 +77,7 @@ function Features({ className = "" }) {
       area: "area-d",
       className: "bg-[url('/img/background.svg')] bg-cover bg-top",
       children: (
-        <div className="bg-[url('/img/pattern.png')] bg-cover bg-top h-full w-full text-left">
+        <div className="bg-[url('/img/pattern.webp')] bg-cover bg-top h-full w-full text-left">
           <h3 className="mb-2 relative z-10">
             {t("features.efficiency.title")}
           </h3>
@@ -133,7 +140,12 @@ function Features({ className = "" }) {
                 ) : (
                   <>
                     {feature.image && (
-                      <img src={feature.image} className="w-15 h-15" />
+                      <img
+                        src={feature.image}
+                        className="w-15 h-15"
+                        loading="lazy"
+                        alt={feature.title}
+                      />
                     )}
                     {feature.title && (
                       <h4 className="text-left">{feature.title}</h4>

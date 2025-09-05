@@ -13,23 +13,23 @@ function Footer({ className = "" }) {
   ];
 
   const legalLinks = [
-    { href: "#", text: t('footer.privacy') },
-    { href: "#", text: t('footer.terms') },
-    { href: "#", text: t('footer.partner') },
-    { href: "#", text: t('footer.questions') },
+    { href: "#", text: t("footer.privacy") },
+    { href: "#", text: t("footer.terms") },
+    { href: "#", text: t("footer.partner") },
+    { href: "#", text: t("footer.questions") },
   ];
 
   const companyInfo = [
-    { text: 'Creator RA Studio SAC' },
-    { text: 'RUC 20606559578' },
-    { text: 'Jr. Policarpo Caballero, Cusco' },
+    { text: "Creator RA Studio SAC" },
+    { text: "RUC 20606559578" },
+    { text: "Jr. Policarpo Caballero, Cusco" },
   ];
 
   const siteMap = [
-    { href: "#products", text: t('menu.products') },
-    { href: "#features", text: t('menu.features') },
-    { href: "#tariffs", text: t('menu.tariffs') },
-    { href: "#contacts", text: t('menu.contacts') },
+    { href: "#products", text: t("menu.products") },
+    { href: "#features", text: t("menu.features") },
+    { href: "#tariffs", text: t("menu.tariffs") },
+    { href: "#contacts", text: t("menu.contacts") },
   ];
 
   const paymentMethods = [
@@ -43,7 +43,7 @@ function Footer({ className = "" }) {
     ],
     [
       { src: "img/amexp.png", className: "payment-icon w-12 sm:w-13" },
-      { src: "img/yape.png", className: "payment-icon w-12 sm:w-13" },
+      { src: "img/yape.webp", className: "payment-icon w-12 sm:w-13" },
       { src: "img/plin.png", className: "payment-icon w-12 sm:w-13" },
     ],
   ];
@@ -60,7 +60,13 @@ function Footer({ className = "" }) {
         <div className="max-w-[1200px] mx-auto flex flex-col justify-between gap-5 sm:gap-10">
           <div className="flex gap-4 flex-col sm:flex-row items-start justify-between sm:gap-8">
             <div className="flex flex-col gap-2">
-              <img src="img/logo.png" alt="logo" width={145} className="mb-3" />
+              <img
+                src="img/logo.webp"
+                alt="logo"
+                width={145}
+                className="mb-3"
+                loading="lazy"
+              />
               <div className="flex gap-2 mb-2">
                 {socialLinks.map((link, index) => (
                   <a
@@ -78,7 +84,7 @@ function Footer({ className = "" }) {
               ))}
             </div>
             <div className="flex flex-col gap-2">
-              <h4>{t('footer.info')}</h4>
+              <h4>{t("footer.info")}</h4>
               {companyInfo.map((info, index) => (
                 <p key={index}>{info.text}</p>
               ))}
@@ -88,7 +94,7 @@ function Footer({ className = "" }) {
               </a>
             </div>
             <div className="flex flex-col gap-2">
-              <h4>{t('footer.siteMap')}</h4>
+              <h4>{t("footer.siteMap")}</h4>
               {siteMap.map((link, index) => (
                 <a key={index} href={link.href}>
                   {link.text}
@@ -96,7 +102,7 @@ function Footer({ className = "" }) {
               ))}
             </div>
             <div className="flex flex-col gap-3">
-              <h4>{t('footer.payment')}</h4>
+              <h4>{t("footer.payment")}</h4>
               {paymentMethods.map((row, rowIndex) => (
                 <div
                   key={rowIndex}
@@ -109,6 +115,8 @@ function Footer({ className = "" }) {
                       key={methodIndex}
                       src={method.src}
                       className={method.className}
+                      loading="lazy"
+                      alt={method.src}
                     />
                   ))}
                 </div>
@@ -116,10 +124,8 @@ function Footer({ className = "" }) {
             </div>
           </div>
           <div className="text-xs flex flex-col gap-2 sm:flex-row sm:gap-5">
-            <div>{t('footer.copyright')}</div>
-            <div>
-              {t('footer.description')}
-            </div>
+            <div>{t("footer.copyright")}</div>
+            <div>{t("footer.description")}</div>
           </div>
         </div>
       </div>

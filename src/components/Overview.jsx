@@ -7,7 +7,14 @@ import { Pagination, Autoplay } from "swiper/modules";
 function Card({ image, title, descriptions }) {
   return (
     <div className="mb-5 md:mb-0 card h-full">
-      <img src={image} className="block" width={300} height={300} />
+      <img
+        src={image}
+        className="block"
+        width={300}
+        height={300}
+        loading="lazy"
+        alt={title}
+      />
       <div className="flex flex-col gap-2 mb-2">
         <h4>{title}</h4>
         {descriptions.map((description, index) => (
@@ -24,14 +31,12 @@ function Overview({ className = "" }) {
   const swiperRef = useRef(null);
 
   const handlePrevClick = () => {
-    console.log("Prev clicked, swiperRef:", swiperRef.current);
     if (swiperRef.current) {
       swiperRef.current.slidePrev();
     }
   };
 
   const handleNextClick = () => {
-    console.log("Next clicked, swiperRef:", swiperRef.current);
     if (swiperRef.current) {
       swiperRef.current.slideNext();
     }
@@ -40,64 +45,56 @@ function Overview({ className = "" }) {
   const cardsData = [
     {
       image: "/img/dynamic-qr.webp",
-      title: t('products.dynamicQr.title'),
+      title: t("products.dynamicQr.title"),
       descriptions: [
-        t('products.dynamicQr.description.1'),
-        t('products.dynamicQr.description.2'),
+        t("products.dynamicQr.description.1"),
+        t("products.dynamicQr.description.2"),
       ],
     },
     {
       image: "/img/qr-menu-catalog.webp",
-      title: t('products.qrMenu.title'),
+      title: t("products.qrMenu.title"),
       descriptions: [
-        t('products.qrMenu.description.1'),
-        t('products.qrMenu.description.2'),
+        t("products.qrMenu.description.1"),
+        t("products.qrMenu.description.2"),
       ],
     },
     {
       image: "/img/qr-nfc-card.webp",
-      title: t('products.nfcCard.title'),
+      title: t("products.nfcCard.title"),
       descriptions: [
-        t('products.nfcCard.description.1'),
-        t('products.nfcCard.description.2'),
-        t('products.nfcCard.description.3'),
+        t("products.nfcCard.description.1"),
+        t("products.nfcCard.description.2"),
+        t("products.nfcCard.description.3"),
       ],
     },
     {
       image: "/img/qr-file.webp",
-      title: t('products.qrFile.title'),
-      descriptions: [
-        t('products.qrFile.description'),
-      ],
+      title: t("products.qrFile.title"),
+      descriptions: [t("products.qrFile.description")],
     },
     {
       image: "/img/digital-invitation.webp",
-      title: t('products.digitalInvitation.title'),
+      title: t("products.digitalInvitation.title"),
       descriptions: [
-        t('products.digitalInvitation.description.1'),
-        t('products.digitalInvitation.description.2'),
+        t("products.digitalInvitation.description.1"),
+        t("products.digitalInvitation.description.2"),
       ],
     },
     {
       image: "/img/portfolio.webp",
-      title: t('products.portfolio.title'),
-      descriptions: [
-        t('products.portfolio.description'),
-      ],
+      title: t("products.portfolio.title"),
+      descriptions: [t("products.portfolio.description")],
     },
     {
       image: "/img/corporate-presentation.webp",
-      title: t('products.corporatePresentation.title'),
-      descriptions: [
-        t('products.corporatePresentation.description'),
-      ],
+      title: t("products.corporatePresentation.title"),
+      descriptions: [t("products.corporatePresentation.description")],
     },
     {
       image: "/img/landing.webp",
-      title: t('products.landing.title'),
-      descriptions: [
-        t('products.landing.description'),
-      ],
+      title: t("products.landing.title"),
+      descriptions: [t("products.landing.description")],
     },
   ];
 
@@ -161,7 +158,7 @@ function Overview({ className = "" }) {
           </Swiper>
         </div>
         <button className="m-auto block w-[300px] mt-10">
-          <a href={"https://one-click.app/register"}>{t('common.register')}</a>
+          <a href={"https://one-click.app/register"}>{t("common.register")}</a>
         </button>
       </div>
     </>

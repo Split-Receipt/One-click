@@ -61,8 +61,7 @@ function App() {
           t('products.qrMenu.for.4'),
         ],
       },
-      image: "/img/qr-menu-f.webp",
-      videos: ["/video/qrmenu.webm","/video/qrcatalog.webm"],
+      videos: ["/video/qrmenu.mp4","/video/qrcatalog.mp4"],
     },
     {
       title: t('products.nfcCard.title'),
@@ -87,8 +86,7 @@ function App() {
           t('products.nfcCard.for.4'),
         ],
       },
-      image: "/img/nfc-card-f.webp",
-      videos: ["/video/nfc-card.webm", "/video/nfc-card2.webm"],
+      videos: ["/video/nfc-card.mp4", "/video/nfc-card2.mp4", "/video/nfc-card3.mp4"],
     },
     {
       title: t('products.qrFile.title'),
@@ -149,7 +147,7 @@ function App() {
         ],
       },
       image: "/img/invitation-f.webp",
-      videos: ["/video/invitation.webm"],
+      videos: ["/video/invitation.mp4", "/video/invitation2.mp4"],
     },
     {
       title: t('products.portfolio.title'),
@@ -175,7 +173,7 @@ function App() {
           t('products.portfolio.for.5'),
         ],
       },
-      image: "/img/portfolio-f.webp",
+      videos: ["/video/portfolio.mp4"],
     },
     {
       title: t('products.landing.title'),

@@ -79,7 +79,7 @@ function Header({ className = "" }) {
         } ${className}`}
       >
         <div>
-          <img src="img/logo.png" className="w-25 md:w-30" />
+          <img src="img/logo.webp" className="w-25 md:w-30" alt="Logo" />
         </div>
 
         <div className="hidden lg:flex gap-4">{renderMenuItems()}</div>
@@ -99,7 +99,7 @@ function Header({ className = "" }) {
           <div className="flex flex-col gap-3">
             {renderMenuItems("font-bold text-white text-2xl")}
             <div className="mt-8">
-              {t('header.feedback')}:
+              {t("header.feedback")}:
               <p className="text-xl font-bold text-white">info@one-click.app</p>
             </div>
           </div>
@@ -146,7 +146,12 @@ function Header({ className = "" }) {
             className="lg:hidden cursor-pointer"
             aria-label="Toggle mobile menu"
           >
-            <img src="img/menu.svg" className="w-8 h-6" alt="Menu" />
+            <img
+              src="img/menu.svg"
+              className="w-8 h-6"
+              alt="Menu"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

@@ -13,24 +13,26 @@ function Screen({ className = "" }) {
           isScreenVisible ? "animate-in" : ""
         } ${className}`}
       >
-        <div className="bg-[url('/img/pattern.png')] bg-[length:100%] bg-center w-screen h-screen flex flex-col items-center justify-center gap-10 relative md:px-10 px-5">
+        <div className="bg-[url('/img/pattern.webp')] bg-[length:100%] bg-center w-screen h-screen flex flex-col items-center justify-center gap-10 relative md:px-10 px-5">
           <div className="relative flex flex-col items-center md:gap-8 gap-5">
             <img
               src="img/cursor.svg"
-              className="absolute top-[-90px] left-0 md:top-[-150px] xl:top-1/2 xl:left-[-20%] xl:-translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
+              className="absolute top-[-100px] left-0 md:top-[-170px] xl:top-1/2 xl:left-[-20%] xl:-translate-y-1/2 animate-bounce-slow transform transition-transform duration-1000 ease-out hover:scale-110 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
               style={{
                 animation: "float-up-right 3s ease-in-out infinite",
                 transform: "translateY(0px)",
               }}
+              loading="lazy"
+              alt="Cursor"
             />
-            <h1 className="text-center" style={{ whiteSpace: 'pre-line' }}>
-              {t('screen.title')}
+            <h1 className="text-center" style={{ whiteSpace: "pre-line" }}>
+              {t("screen.title")}
             </h1>
             <p className="text-center md:text-2xl text-lg md:w-1/2 w-full">
-              {t('screen.subtitle')}
+              {t("screen.subtitle")}
             </p>
             <button className="bg-[#9560EB]">
-              <a href="https://one-click.app/register">{t('common.connect')}</a>
+              <a href="https://one-click.app/register">{t("common.connect")}</a>
             </button>
             <img
               src="img/message.svg"
@@ -39,6 +41,8 @@ function Screen({ className = "" }) {
                 animation: "float-down-left 3s ease-in-out infinite",
                 transform: "translateY(0px)",
               }}
+              loading="lazy"
+              alt="Message"
             />
           </div>
         </div>
