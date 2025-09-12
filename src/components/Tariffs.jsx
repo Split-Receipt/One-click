@@ -147,7 +147,10 @@ function Tariffs({ className = "" }) {
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
+            allowTouchMove={true}
+            grabCursor={true}
             pagination={{
               clickable: true,
               bulletClass: "swiper-pagination-bullet",

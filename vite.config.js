@@ -5,17 +5,9 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  build: {
-    minify: 'terser',
-    cssCodeSplit: true,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          swiper: ['swiper'],
-          i18n: ['react-i18next', 'i18next']
-        }
-      }
-    }
+  server: {
+    port: 3000,
+    strictPort: true,
+    host: true
   }
 })

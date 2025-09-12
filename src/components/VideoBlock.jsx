@@ -38,7 +38,6 @@ function VideoBlock({ className = "", info }) {
             loop={videos.length === 1}
             muted
             playsInline
-            loading="lazy"
             preload="metadata"
           />
         ))}

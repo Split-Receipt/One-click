@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import i18n from "../../i18n.js";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
 
 function Footer({ className = "" }) {
@@ -12,11 +13,32 @@ function Footer({ className = "" }) {
     { href: "#", img: "/img/linkedin.png" },
   ];
 
+  const getDocPath = (filename) => {
+    const fullFilename = `${filename}-${i18n.language}.docx`;
+    return `/docs/${fullFilename}`;
+  };
+
   const legalLinks = [
-    { href: "#", text: t("footer.privacy") },
-    { href: "#", text: t("footer.terms") },
-    { href: "#", text: t("footer.partner") },
-    { href: "#", text: t("footer.questions") },
+    {
+      href: getDocPath("privacy"),
+      text: t("footer.privacy"),
+      blank: true,
+    },
+    {
+      href: getDocPath("terms"),
+      text: t("footer.terms"),
+      blank: true,
+    },
+    {
+      href: getDocPath("partner"),
+      text: t("footer.partner"),
+      blank: true,
+    },
+    {
+      href: getDocPath("faq"),
+      text: t("footer.questions"),
+      blank: true,
+    },
   ];
 
   const companyInfo = [
@@ -78,7 +100,11 @@ function Footer({ className = "" }) {
                 ))}
               </div>
               {legalLinks.map((link, index) => (
-                <a key={index} href={link.href}>
+                <a
+                  key={index}
+                  href={link.href}
+                  target={link.blank ? "_blank" : "_self"}
+                >
                   {link.text}
                 </a>
               ))}
