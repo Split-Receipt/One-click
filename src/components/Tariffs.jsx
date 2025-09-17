@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 function Tariffs({ className = "" }) {
   const { t } = useTranslation();
@@ -137,92 +137,107 @@ function Tariffs({ className = "" }) {
       >
         <div className="container text-center relative">
           <h2>{t("menu.tariffs")}</h2>
-          <Swiper
-            ref={swiperRef}
-            spaceBetween={10}
-            slidesPerView={1}
-            modules={[Pagination, Autoplay]}
-            loop={true}
-            initialSlide={tariffsData.findIndex((tariff) => tariff.isSpecial)}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            allowTouchMove={true}
-            grabCursor={true}
-            pagination={{
-              clickable: true,
-              bulletClass: "swiper-pagination-bullet",
-              bulletActiveClass: "swiper-pagination-bullet--active",
-            }}
-            breakpoints={{
-              640: {
-                slidesPerView: 1,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 3,
-              },
-              1280: {
-                slidesPerView: 4,
-              },
-            }}
-            className="w-full tariffs !md:pt-15 !pt-10"
-            onSwiper={(swiper) => {
-              swiperRef.current = swiper;
+          <div
+            style={{
+              touchAction: "pan-x pan-y",
+              WebkitTouchCallout: "none",
+              WebkitUserSelect: "none",
+              userSelect: "none",
             }}
           >
-            {tariffsData.map((tariff, index) => (
-              <SwiperSlide key={index} className="p-2 w-full">
-                <div
-                  className={`feature-card py-5 px-5 ${
-                    tariff.isSpecial ? "feature-card--special" : ""
-                  }`}
-                >
-                  <p className="uppercase text-xl text-white font-bold">
-                    {tariff.name}
-                  </p>
-                  <p>{tariff.description}</p>
-                  <h4 className="leading-tight">
-                    {!tariff.price.length
-                      ? t("common.free.title")
-                      : tariff.price.map((price, priceIndex) => (
-                          <p key={priceIndex}>
-                            S / {price.value.toFixed(2)} /{" "}
-                            {price.period.toLowerCase()}
-                          </p>
-                        ))}
-                  </h4>
-                  <div className="py-2">
-                    {tariff.features.map((feature, featureIndex) => (
-                      <div
-                        key={featureIndex}
-                        className="flex items-center gap-2 mb-2 text-sm"
-                      >
-                        <img
-                          src="img/check.svg"
-                          className="w-4 h-4"
-                          loading="lazy"
-                          alt="check"
-                        />
-                        <span>{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <button
-                    className={`mt-auto ${
-                      tariff.isSpecial ? "button--special" : ""
+            <Swiper
+              ref={swiperRef}
+              spaceBetween={10}
+              slidesPerView={1}
+              modules={[Pagination, Autoplay, Navigation]}
+              loop={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: true,
+                pauseOnMouseEnter: true,
+              }}
+              allowTouchMove={true}
+              grabCursor={true}
+              touchRatio={1}
+              touchAngle={45}
+              threshold={5}
+              touchStartPreventDefault={true}
+              touchMoveStopPropagation={false}
+              touchEventsTarget="container"
+              pagination={{
+                clickable: true,
+                bulletClass: "swiper-pagination-bullet",
+                bulletActiveClass: "swiper-pagination-bullet--active",
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+                1280: {
+                  slidesPerView: 4,
+                },
+              }}
+              className="w-full tariffs !md:pt-15 !pt-10"
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+            >
+              {tariffsData.map((tariff, index) => (
+                <SwiperSlide key={index} className="p-2 w-full">
+                  <div
+                    className={`feature-card py-5 px-5 ${
+                      tariff.isSpecial ? "feature-card--special" : ""
                     }`}
                   >
-                    <a href={tariff.buttonLink}>{tariff.buttonText}</a>
-                  </button>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                    <p className="uppercase text-xl text-white font-bold">
+                      {tariff.name}
+                    </p>
+                    <p>{tariff.description}</p>
+                    <h4 className="leading-tight">
+                      {!tariff.price.length
+                        ? t("common.free.title")
+                        : tariff.price.map((price, priceIndex) => (
+                            <p key={priceIndex}>
+                              S / {price.value.toFixed(2)} /{" "}
+                              {price.period.toLowerCase()}
+                            </p>
+                          ))}
+                    </h4>
+                    <div className="py-2">
+                      {tariff.features.map((feature, featureIndex) => (
+                        <div
+                          key={featureIndex}
+                          className="flex items-center gap-2 mb-2 text-sm"
+                        >
+                          <img
+                            src="img/check.svg"
+                            className="w-4 h-4"
+                            loading="lazy"
+                            alt="check"
+                          />
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <button
+                      className={`mt-auto ${
+                        tariff.isSpecial ? "button--special" : ""
+                      }`}
+                      style={{ pointerEvents: "auto" }}
+                    >
+                      <a href={tariff.buttonLink}>{tariff.buttonText}</a>
+                    </button>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </>

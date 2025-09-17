@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 function Card({ image, title, descriptions }) {
   return (
@@ -124,12 +124,19 @@ function Overview({ className = "" }) {
             ref={swiperRef}
             spaceBetween={16}
             slidesPerView={1}
-            modules={[Pagination, Autoplay]}
+            modules={[Pagination, Autoplay, Navigation]}
             loop={true}
             autoplay={{
               delay: 3000,
-              disableOnInteraction: false,
+              disableOnInteraction: true,
             }}
+            allowTouchMove={true}
+            grabCursor={true}
+            touchRatio={1}
+            touchAngle={45}
+            threshold={5}
+            touchStartPreventDefault={false}
+            touchMoveStopPropagation={false}
             pagination={{
               clickable: true,
               bulletClass: "swiper-pagination-bullet",

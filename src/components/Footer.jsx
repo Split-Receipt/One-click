@@ -7,10 +7,10 @@ function Footer({ className = "" }) {
   const [footerRef, isFooterVisible] = useScrollAnimation(0.1, "-50px");
 
   const socialLinks = [
-    { href: "#", img: "/img/fb.png" },
-    { href: "#", img: "/img/inst.png" },
-    { href: "#", img: "/img/tik.png" },
-    { href: "#", img: "/img/linkedin.png" },
+    { href: "https://www.facebook.com/share/1BdovG9JLT/", img: "/img/fb.png" },
+    { href: "https://www.instagram.com/oneclick_webapp?igsh=N2x3cW5jODdmd2Vp", img: "/img/inst.png" },
+    { href: "https://www.tiktok.com/@oneclick_webapp", img: "/img/tik.png" },
+    { href: "https://www.linkedin.com/company/oneclickwebapp/", img: "/img/linkedin.png" },
   ];
 
   const getDocPath = (filename) => {
@@ -94,6 +94,7 @@ function Footer({ className = "" }) {
                   <a
                     key={index}
                     href={link.href}
+                    target="_blank"
                     className="bg-cover bg-center w-10 h-10 block"
                     style={{ backgroundImage: `url(${link.img})` }}
                   />
