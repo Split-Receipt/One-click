@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
+import { openInNewTab } from "../utils.js";
 
 function Screen({ className = "" }) {
   const { t } = useTranslation();
@@ -31,7 +32,7 @@ function Screen({ className = "" }) {
             <p className="text-center md:text-2xl text-lg md:w-1/2 w-full">
               {t("screen.subtitle")}
             </p>
-            <button className="bg-[#9560EB]">
+            <button className="bg-[#9560EB]" onClick={() => openInNewTab("https://one-click.app/register")}>
               <a href="https://one-click.app/register">{t("common.connect")}</a>
             </button>
             <img

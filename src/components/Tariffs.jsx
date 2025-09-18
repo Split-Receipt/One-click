@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import { openInNewTab } from "../utils.js";
 
 function Tariffs({ className = "" }) {
   const { t } = useTranslation();
@@ -230,8 +231,9 @@ function Tariffs({ className = "" }) {
                         tariff.isSpecial ? "button--special" : ""
                       }`}
                       style={{ pointerEvents: "auto" }}
+                      onClick={() => openInNewTab(tariff.buttonLink)}
                     >
-                      <a href={tariff.buttonLink}>{tariff.buttonText}</a>
+                      {tariff.buttonText}
                     </button>
                   </div>
                 </SwiperSlide>

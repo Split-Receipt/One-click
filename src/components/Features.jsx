@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useScrollAnimation } from "../hooks/useScrollAnimation.js";
+import { openInNewTab } from "../utils.js";
 
 function Features({ className = "" }) {
   const { t } = useTranslation();
@@ -84,7 +85,7 @@ function Features({ className = "" }) {
           <h4 className="mb-5 relative z-10">
             {t("features.efficiency.description")}
           </h4>
-          <button>
+          <button onClick={() => openInNewTab("https://one-click.app/register")}>
             <a href="https://one-click.app/register">{t("common.connect")}</a>
           </button>
         </div>
