@@ -362,6 +362,16 @@ button:hover {
   height: 100%;
 }
 
+.tariffs .swiper {
+  padding: 0 0 15px;
+}
+
+@media (max-width: 768px) {
+  .tariffs .swiper {
+    padding: 0 0 10px;
+  }
+}
+
 .swiper-slide {
   height: auto;
 }
@@ -429,6 +439,27 @@ button:hover {
 
 .tariffs .swiper-pagination {
   top: 0 !important;
+  height: 20px !important;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .tariffs .swiper-pagination {
+    height: 15px !important;
+    margin-bottom: 5px;
+    position: relative !important;
+    z-index: 1;
+  }
+
+  .tariffs .swiper-pagination-bullet {
+    width: 6px !important;
+    height: 6px !important;
+    margin: 0 3px !important;
+  }
+
+  .tariffs .feature-card {
+    margin-top: 5px;
+  }
 }
 
 .swiper-pagination-bullet {
