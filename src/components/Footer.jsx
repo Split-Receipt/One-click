@@ -14,7 +14,7 @@ function Footer({ className = "" }) {
   ];
 
   const getDocPath = (filename) => {
-    const fullFilename = `${filename}-${i18n.language}.docx`;
+    const fullFilename = `${filename}-${i18n.language}.pdf`;
     return `/docs/${fullFilename}`;
   };
 
@@ -37,6 +37,11 @@ function Footer({ className = "" }) {
     {
       href: getDocPath("faq"),
       text: t("footer.questions"),
+      blank: true,
+    },
+    {
+      href: 'https://one-click.app/librodereclamaciones',
+      text: t("footer.book"),
       blank: true,
     },
   ];
@@ -105,6 +110,7 @@ function Footer({ className = "" }) {
                   key={index}
                   href={link.href}
                   target={link.blank ? "_blank" : "_self"}
+                  rel="noopener noreferrer"
                 >
                   {link.text}
                 </a>
