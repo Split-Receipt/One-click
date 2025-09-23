@@ -8,9 +8,15 @@ function Footer({ className = "" }) {
 
   const socialLinks = [
     { href: "https://www.facebook.com/share/1BdovG9JLT/", img: "/img/fb.png" },
-    { href: "https://www.instagram.com/oneclick_webapp?igsh=N2x3cW5jODdmd2Vp", img: "/img/inst.png" },
+    {
+      href: "https://www.instagram.com/oneclick_webapp?igsh=N2x3cW5jODdmd2Vp",
+      img: "/img/inst.png",
+    },
     { href: "https://www.tiktok.com/@oneclick_webapp", img: "/img/tik.png" },
-    { href: "https://www.linkedin.com/company/oneclickwebapp/", img: "/img/linkedin.png" },
+    {
+      href: "https://www.linkedin.com/company/oneclickwebapp/",
+      img: "/img/linkedin.png",
+    },
   ];
 
   const getDocPath = (filename) => {
@@ -40,7 +46,7 @@ function Footer({ className = "" }) {
       blank: true,
     },
     {
-      href: 'https://one-click.app/librodereclamaciones',
+      href: t("footer.bookUrl"),
       text: t("footer.book"),
       blank: true,
     },

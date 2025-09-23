@@ -50,7 +50,8 @@
     "questions": "Preguntas frecuentes",
     "siteMap": "Mapa del sitio",
     "terms": "Términos y condiciones",
-    "book": "Libro de reclamaciones"
+    "book": "Libro de reclamaciones",
+    "bookUrl": "https://one-click.app/librodereclamaciones"
   },
   "header": {
     "feedback": "Déjanos su comentario",
@@ -296,6 +297,7 @@
       "files": "Carga de archivos PDF, Word, Excel",
       "image": {
         "1": "1 Imagen",
+        "2": "2 Imágenes",
         "more": "Imagenes"
       },
       "location": "Ubicación / Mapa",
@@ -305,7 +307,7 @@
       "menu": "Menu digital con IA traductor",
       "nfc": "Tarjeta NFC",
       "popup": "1 Banner POP UP",
-      "qrCode": "Icono para cédigo QR",
+      "qrCode": "Icono para código QR",
       "qrPage": {
         "1": "1 pagina con QR",
         "2": "2 pagina con QR",
@@ -317,9 +319,9 @@
         "more": "Enlaces a redes sociales"
       },
       "text": {
-        "2": "2 blockes de texto",
-        "ai": "Blockes de texto",
-        "more": "Blockes de texto"
+        "2": "2 bloques de texto",
+        "ai": "Bloques de texto",
+        "more": "Bloques de texto"
       },
       "video": "Video YouTube / Vimeo",
       "videoWidget": "Video Widget presentación, testimonios, carrusel"
@@ -329,7 +331,7 @@
       "title": "Free"
     },
     "month": "mes",
-    "oneTime": "puntual",
+    "oneTime": "único pago",
     "professional": {
       "description": "Tarjeta profesional, Portafolio, Presentacion Corporativa",
       "title": "Pro"

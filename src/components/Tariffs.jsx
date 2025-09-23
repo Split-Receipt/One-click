@@ -39,7 +39,7 @@ function Tariffs({ className = "" }) {
       ],
       features: [
         t("tariffs.features.qrPage.1"),
-        t("tariffs.features.image.1"),
+        t("tariffs.features.image.2"),
         t("tariffs.features.text.2"),
         t("tariffs.features.social.4"),
         t("tariffs.features.externalLinks.2"),
